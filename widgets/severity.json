@@ -1,1 +1,21 @@
-[ ]
+[ {
+  "uid" : "551fff9de7e50bf8",
+  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1704645676772,
+    "stop" : 1704645677762,
+    "duration" : 990
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "18d14df882fe7011",
+  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1704645674079,
+    "stop" : 1704645675669,
+    "duration" : 1590
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

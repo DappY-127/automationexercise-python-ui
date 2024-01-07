@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Jan 07 16:41:14 GMT 2024","Sun Jan 07 16:41:15 GMT 2024","1590","tests","scrolling_feature_test","TestScrollingFeature","","","Scroll Up using 'Arrow' button and Scroll Down functionality",""
+"broken","Sun Jan 07 16:41:16 GMT 2024","Sun Jan 07 16:41:17 GMT 2024","990","tests","scrolling_feature_test","TestScrollingFeature","","","Scroll Up without 'Arrow' button and Scroll Down functionality",""

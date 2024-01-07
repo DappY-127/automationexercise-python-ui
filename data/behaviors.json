@@ -1,5 +1,35 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Registration Functionality",
+    "children" : [ {
+      "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+      "uid" : "18d14df882fe7011",
+      "parentUid" : "3e2a355d5946a5d454ef3f6055ec2d1b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1704645674079,
+        "stop" : 1704645675669,
+        "duration" : 1590
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+      "uid" : "551fff9de7e50bf8",
+      "parentUid" : "3e2a355d5946a5d454ef3f6055ec2d1b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1704645676772,
+        "stop" : 1704645677762,
+        "duration" : 990
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3e2a355d5946a5d454ef3f6055ec2d1b"
+  } ],
   "name" : "behaviors"
 }

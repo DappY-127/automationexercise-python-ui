@@ -1,5 +1,43 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status\nfrom disconnected: unable to send message to renderer\n  (Session info: chrome=112.0.5615.165)",
+      "children" : [ {
+        "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+        "uid" : "18d14df882fe7011",
+        "parentUid" : "182e2970ece3cd36464ddac980e99f53",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704645674079,
+          "stop" : 1704645675669,
+          "duration" : 1590
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "182e2970ece3cd36464ddac980e99f53"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash\nfrom unknown error: cannot determine loading status\nfrom tab crashed\n  (Session info: chrome=112.0.5615.165)",
+      "children" : [ {
+        "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+        "uid" : "551fff9de7e50bf8",
+        "parentUid" : "878ea999e4a02ca431300367f9e9e16b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1704645676772,
+          "stop" : 1704645677762,
+          "duration" : 990
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "878ea999e4a02ca431300367f9e9e16b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }
