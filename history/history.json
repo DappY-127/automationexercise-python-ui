@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "551fff9de7e50bf8",
+      "uid" : "d943ec8dfc8e5db1",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash\nfrom unknown error: cannot determine loading status\nfrom tab crashed\n  (Session info: chrome=112.0.5615.165)",
       "time" : {
-        "start" : 1704645676772,
-        "stop" : 1704645677762,
-        "duration" : 990
+        "start" : 1704646724045,
+        "stop" : 1704646724628,
+        "duration" : 583
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "18d14df882fe7011",
+      "uid" : "664f62e1881295ed",
       "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status\nfrom disconnected: unable to send message to renderer\n  (Session info: chrome=112.0.5615.165)",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: session deleted because of page crash\nfrom unknown error: cannot determine loading status\nfrom tab crashed\n  (Session info: chrome=112.0.5615.165)",
       "time" : {
-        "start" : 1704645674079,
-        "stop" : 1704645675669,
-        "duration" : 1590
+        "start" : 1704646722359,
+        "stop" : 1704646722958,
+        "duration" : 599
       }
     } ]
   }

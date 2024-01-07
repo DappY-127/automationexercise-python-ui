@@ -8,26 +8,26 @@
         "name" : "TestScrollingFeature",
         "children" : [ {
           "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
-          "uid" : "18d14df882fe7011",
+          "uid" : "664f62e1881295ed",
           "parentUid" : "0bd160003c4b9bdd59e32c1f2f32cd67",
           "status" : "broken",
           "time" : {
-            "start" : 1704645674079,
-            "stop" : 1704645675669,
-            "duration" : 1590
+            "start" : 1704646722359,
+            "stop" : 1704646722958,
+            "duration" : 599
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
-          "uid" : "551fff9de7e50bf8",
+          "uid" : "d943ec8dfc8e5db1",
           "parentUid" : "0bd160003c4b9bdd59e32c1f2f32cd67",
           "status" : "broken",
           "time" : {
-            "start" : 1704645676772,
-            "stop" : 1704645677762,
-            "duration" : 990
+            "start" : 1704646724045,
+            "stop" : 1704646724628,
+            "duration" : 583
           },
           "flaky" : false,
           "newFailed" : false,

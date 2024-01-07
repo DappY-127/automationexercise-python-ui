@@ -1,39 +1,39 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "8e143c5cfad4",
+    "name" : "3fe57d098a69",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
         "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
-        "uid" : "18d14df882fe7011",
-        "parentUid" : "82dd2dbf1a4f8d657729bbe1ce1af185",
+        "uid" : "664f62e1881295ed",
+        "parentUid" : "8602c51b3a8bcc51c421bf15f45c89d6",
         "status" : "broken",
         "time" : {
-          "start" : 1704645674079,
-          "stop" : 1704645675669,
-          "duration" : 1590
+          "start" : 1704646722359,
+          "stop" : 1704646722958,
+          "duration" : 599
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
-        "uid" : "551fff9de7e50bf8",
-        "parentUid" : "82dd2dbf1a4f8d657729bbe1ce1af185",
+        "uid" : "d943ec8dfc8e5db1",
+        "parentUid" : "8602c51b3a8bcc51c421bf15f45c89d6",
         "status" : "broken",
         "time" : {
-          "start" : 1704645676772,
-          "stop" : 1704645677762,
-          "duration" : 990
+          "start" : 1704646724045,
+          "stop" : 1704646724628,
+          "duration" : 583
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "82dd2dbf1a4f8d657729bbe1ce1af185"
+      "uid" : "8602c51b3a8bcc51c421bf15f45c89d6"
     } ],
-    "uid" : "4c6f17e216070888c2c9b22f4220ff0e"
+    "uid" : "f3de2e704f87f8224eda583a53ff579f"
   } ],
   "name" : "timeline"
 }
