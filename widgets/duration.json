@@ -1,21 +1,21 @@
 [ {
-  "uid" : "664f62e1881295ed",
-  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
-  "time" : {
-    "start" : 1704646722359,
-    "stop" : 1704646722958,
-    "duration" : 599
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "d943ec8dfc8e5db1",
+  "uid" : "52f8f93545d336d9",
   "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
   "time" : {
-    "start" : 1704646724045,
-    "stop" : 1704646724628,
-    "duration" : 583
+    "start" : 1704647324010,
+    "stop" : 1704647325975,
+    "duration" : 1965
   },
-  "status" : "broken",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "272d9b5ee58ca2a1",
+  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1704647320635,
+    "stop" : 1704647322900,
+    "duration" : 2265
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

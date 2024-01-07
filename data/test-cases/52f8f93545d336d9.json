@@ -1,0 +1,189 @@
+{
+  "uid" : "52f8f93545d336d9",
+  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_test_scroll_up_scroll_down",
+  "historyId" : "83496b0bebf58a3537e5f25b90760d3f",
+  "time" : {
+    "start" : 1704647324010,
+    "stop" : 1704647325975,
+    "duration" : 1965
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1704647323043,
+      "stop" : 1704647323908,
+      "duration" : 865
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1704647323909,
+      "stop" : 1704647324009,
+      "duration" : 100
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1704647319536,
+      "stop" : 1704647319605,
+      "duration" : 69
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Scroll down page to bottom",
+      "time" : {
+        "start" : 1704647325498,
+        "stop" : 1704647325503,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "'SUBSCRIPTION' is visible",
+      "time" : {
+        "start" : 1704647325503,
+        "stop" : 1704647325518,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Scroll up",
+      "time" : {
+        "start" : 1704647325762,
+        "stop" : 1704647325773,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "17a36698d8a40190",
+      "name" : "site scrolled down",
+      "source" : "17a36698d8a40190.png",
+      "type" : "image/png",
+      "size" : 289827
+    }, {
+      "uid" : "6fd648d370eb558a",
+      "name" : "site scrolled up",
+      "source" : "6fd648d370eb558a.png",
+      "type" : "image/png",
+      "size" : 97535
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1704647325975,
+      "stop" : 1704647326088,
+      "duration" : 113
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "feature",
+    "value" : "Registration Functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "scrolling_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScrollingFeature"
+  }, {
+    "name" : "host",
+    "value" : "b25fe2e0a547"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.scrolling_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "52f8f93545d336d9.json",
+  "parameterValues" : [ ]
+}
