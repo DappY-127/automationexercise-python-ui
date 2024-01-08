@@ -19,6 +19,7 @@ class HomePage(BasePage):
     HEADER_CONTACT_US_BTTN = ('xpath', '//a[contains(text(), "Contact us")]')
     HEADER_LOGOUT_BTTN = ('xpath', '//a[contains(text(), " Logout")]')
     HEADER_DELETE_ACC_BTTN = ('xpath', '//a[contains(text(), " Delete Account")]')
+    HEADER_TEST_CASE_BTTN = ('xpath', '//a[contains(text(), " Test Cases")]')
     SUBSCRIPTION_EMAIL_FIELD = ('css selector', '#susbscribe_email')
     SUBSCRIPTION_BTTN = ('css selector', '#subscribe')
     SUBSCRIPTION_TEXT = ('css selector', '.single-widget h2')
@@ -35,6 +36,14 @@ class HomePage(BasePage):
     def click_delete_account_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_DELETE_ACC_BTTN)).click()
 
+    @allure.step("Click 'Test Cases' header button")
+    def click_testcases_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.HEADER_TEST_CASE_BTTN)).click()
+
+    @allure.step("Click 'Contact Us' header button")
+    def click_contact_us_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.HEADER_CONTACT_US_BTTN)).click()
+
     @allure.step("Click move upward arrow button")
     def click_move_upward_button(self):
         self.wait.until(EC.visibility_of_element_located(self.SCROLL_UP_BTTN))
@@ -50,18 +59,18 @@ class HomePage(BasePage):
         actions = ActionChains(self.browser)
         actions.send_keys(Keys.HOME).perform()
 
-    @allure.step("'SUBSCRIPTION' is visible")
+    @allure.step("'SUBSCRIPTION' footer block visible")
     def is_subscription_label_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.SUBSCRIPTION_TEXT))
         self.wait.until(EC.visibility_of_element_located(self.SUBSCRIPTION_BTTN))
         self.wait.until(EC.visibility_of_element_located(self.SUBSCRIPTION_EMAIL_FIELD))
        
 
-    @allure.step("is site header visible")
+    @allure.step("Site header visible")
     def is_header_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.HEADER))
 
-    @allure.step("'Full-Fledged ...' text is visible on slider")
+    @allure.step("'Full-Fledged practice website...' slider text label visible")
     def is_active_slider_text_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.ACTIVE_SLIDER_TEXT))
         self.wait.until(EC.element_to_be_clickable(self.ACTIVE_SLIDER_TEXT))          

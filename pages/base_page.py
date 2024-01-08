@@ -13,10 +13,12 @@ class BasePage():
         self.fake = Faker()
 
     def open(self):
-        self.browser.get(self.PAGE_URL)
+        with allure.step(f"Open {self.PAGE_URL} page"):
+            self.browser.get(self.PAGE_URL)
 
     def is_opened(self):
-        self.wait.until(EC.url_to_be(self.PAGE_URL))
+        with allure.step(f"Page {self.PAGE_URL} is opened"):
+            self.wait.until(EC.url_to_be(self.PAGE_URL))
 
 
     def make_screenshot(self, screenshot_name):
