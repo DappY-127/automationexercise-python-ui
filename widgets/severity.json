@@ -1,1 +1,41 @@
-[ ]
+[ {
+  "uid" : "6389a3ec4e40ccc1",
+  "name" : "Contact Us Form",
+  "time" : {
+    "start" : 1704793927296,
+    "stop" : 1704793931863,
+    "duration" : 4567
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a9411ff25f95c390",
+  "name" : "Verify Test Cases Page",
+  "time" : {
+    "start" : 1704793939748,
+    "stop" : 1704793942097,
+    "duration" : 2349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "93489a32483cc96d",
+  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1704793933036,
+    "stop" : 1704793935513,
+    "duration" : 2477
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b69c16b975d3996",
+  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1704793936657,
+    "stop" : 1704793938618,
+    "duration" : 1961
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

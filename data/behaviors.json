@@ -1,5 +1,69 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Customer Support",
+    "children" : [ {
+      "name" : "Contact Us Form",
+      "uid" : "6389a3ec4e40ccc1",
+      "parentUid" : "9bf97060ccde1345fbd62d132bd91b64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704793927296,
+        "stop" : 1704793931863,
+        "duration" : 4567
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9bf97060ccde1345fbd62d132bd91b64"
+  }, {
+    "name" : "Interface & Navigation",
+    "children" : [ {
+      "name" : "Scroll Functionality",
+      "children" : [ {
+        "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+        "uid" : "93489a32483cc96d",
+        "parentUid" : "479ce508bce6c5567cd91d405043bf94",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793933036,
+          "stop" : 1704793935513,
+          "duration" : 2477
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+        "uid" : "7b69c16b975d3996",
+        "parentUid" : "479ce508bce6c5567cd91d405043bf94",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793936657,
+          "stop" : 1704793938618,
+          "duration" : 1961
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "479ce508bce6c5567cd91d405043bf94"
+    }, {
+      "name" : "Verify Test Cases Page",
+      "uid" : "a9411ff25f95c390",
+      "parentUid" : "0fdb1f9e7bb9c77df780942b5541f89c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1704793939748,
+        "stop" : 1704793942097,
+        "duration" : 2349
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0fdb1f9e7bb9c77df780942b5541f89c"
+  } ],
   "name" : "behaviors"
 }

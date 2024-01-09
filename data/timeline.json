@@ -1,5 +1,65 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "a77a1b7077b5",
+    "children" : [ {
+      "name" : "1-MainThread",
+      "children" : [ {
+        "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+        "uid" : "93489a32483cc96d",
+        "parentUid" : "a71607d6e8fdcaeae71ef5ba73a4519d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793933036,
+          "stop" : 1704793935513,
+          "duration" : 2477
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Test Cases Page",
+        "uid" : "a9411ff25f95c390",
+        "parentUid" : "a71607d6e8fdcaeae71ef5ba73a4519d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793939748,
+          "stop" : 1704793942097,
+          "duration" : 2349
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Contact Us Form",
+        "uid" : "6389a3ec4e40ccc1",
+        "parentUid" : "a71607d6e8fdcaeae71ef5ba73a4519d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793927296,
+          "stop" : 1704793931863,
+          "duration" : 4567
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+        "uid" : "7b69c16b975d3996",
+        "parentUid" : "a71607d6e8fdcaeae71ef5ba73a4519d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793936657,
+          "stop" : 1704793938618,
+          "duration" : 1961
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a71607d6e8fdcaeae71ef5ba73a4519d"
+    } ],
+    "uid" : "62890e23f81e134e6828ee2c15a9c01f"
+  } ],
   "name" : "timeline"
 }

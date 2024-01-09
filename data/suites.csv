@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jan 09 09:52:16 GMT 2024","Tue Jan 09 09:52:18 GMT 2024","1961","tests","scrolling_feature_test","TestScrollingFeature","","","Scroll Up without 'Arrow' button and Scroll Down functionality",""
+"passed","Tue Jan 09 09:52:13 GMT 2024","Tue Jan 09 09:52:15 GMT 2024","2477","tests","scrolling_feature_test","TestScrollingFeature","","","Scroll Up using 'Arrow' button and Scroll Down functionality",""
+"passed","Tue Jan 09 09:52:19 GMT 2024","Tue Jan 09 09:52:22 GMT 2024","2349","tests","scrolling_feature_test","TestScrollingFeature","","","Verify Test Cases Page",""
+"passed","Tue Jan 09 09:52:07 GMT 2024","Tue Jan 09 09:52:11 GMT 2024","4567","tests","customer_support_feature_test","TestContactUsFeature","","","Contact Us Form",""
