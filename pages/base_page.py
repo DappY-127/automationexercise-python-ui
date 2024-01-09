@@ -29,6 +29,7 @@ class BasePage():
         )
 
     def fill_field(self, locator, value):
-        field = self.wait.until(EC.element_to_be_clickable(locator))
+        # field = self.wait.until(EC.element_to_be_clickable(locator))
+        field = self.wait.until(EC.visibility_of_element_located(locator))
         field.clear()
         field.send_keys(value)        

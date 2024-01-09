@@ -39,7 +39,7 @@ class TestScrollingFeature(BaseTest):
     def test_verify_testcase_page(self):
         self.home_page.open()
         self.home_page.is_header_visible()
-        self.home_page.click_testcases_button()    
+        self.home_page.click_testcases_button()
         self.test_cases_page.is_testcases_visible()
         self.home_page.make_screenshot("test case page")
 
