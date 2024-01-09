@@ -18,7 +18,7 @@ The basic structure for test implementation has been written.
      - [ ] User Logout (Test Case 4) - Not Developed
 
 ### Customer Support:
-   - [ ] Contact Us Form (Test Case 6) -  In Progress
+   - [x] Contact Us Form (Test Case 6) -  Developed
 
 ### Interface & Navigation:
    - [x] Verify Test Cases Page (Test Case 7) - Developed
@@ -41,8 +41,8 @@ The basic structure for test implementation has been written.
 
 ### Shopping & Checkout:
    - Subscription Handling:
-     - [ ] Verify Subscription in Home Page (Test Case 10) - Not Developed
-     - [ ] Verify Subscription in Cart Page (Test Case 11) - Not Developed
+     - [ ] Verify Subscription in Home Page (Test Case 10) - In Progress
+     - [ ] Verify Subscription in Cart Page (Test Case 11) - In Progress
    - Checkout Process:
      - [ ] Place Order: Register While Checkout (Test Case 14) - Not Developed
      - [ ] Place Order: Register Before Checkout (Test Case 15) - Not Developed
