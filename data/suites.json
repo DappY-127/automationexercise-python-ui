@@ -1,43 +1,5 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ {
-    "name" : "tests",
-    "children" : [ {
-      "name" : "scrolling_feature_test",
-      "children" : [ {
-        "name" : "TestScrollingFeature",
-        "children" : [ {
-          "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
-          "uid" : "e197be3f08399dbf",
-          "parentUid" : "0bd160003c4b9bdd59e32c1f2f32cd67",
-          "status" : "passed",
-          "time" : {
-            "start" : 1704661489418,
-            "stop" : 1704661491079,
-            "duration" : 1661
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
-          "uid" : "9d11d9cf752fe3f2",
-          "parentUid" : "0bd160003c4b9bdd59e32c1f2f32cd67",
-          "status" : "passed",
-          "time" : {
-            "start" : 1704661492258,
-            "stop" : 1704661493869,
-            "duration" : 1611
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "0bd160003c4b9bdd59e32c1f2f32cd67"
-      } ],
-      "uid" : "76a88ac31c3dccb5b5fb2ef2160bfb6f"
-    } ],
-    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
-  } ],
+  "children" : [ ],
   "name" : "suites"
 }

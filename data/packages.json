@@ -1,35 +1,5 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ {
-    "name" : "tests.scrolling_feature_test",
-    "children" : [ {
-      "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
-      "uid" : "e197be3f08399dbf",
-      "parentUid" : "e1784aae217d84a3ad6940c8f1eac14b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1704661489418,
-        "stop" : 1704661491079,
-        "duration" : 1661
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
-      "uid" : "9d11d9cf752fe3f2",
-      "parentUid" : "e1784aae217d84a3ad6940c8f1eac14b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1704661492258,
-        "stop" : 1704661493869,
-        "duration" : 1611
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    } ],
-    "uid" : "tests.scrolling_feature_test"
-  } ],
+  "children" : [ ],
   "name" : "packages"
 }
