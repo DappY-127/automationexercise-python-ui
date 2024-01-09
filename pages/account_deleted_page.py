@@ -8,8 +8,8 @@ class AccountDeletedPage(BasePage):
 
     # PAGE_URL= Links.
 
-    ACCOUNT_DELETED_MSSG = ('xpath', '[data-qa="account-deleted"]')
-    CONTINUE_BTTN = ('xpath', '[data-qa="continue-button"]')
+    ACCOUNT_DELETED_MSSG = ('css selector', '[data-qa="account-deleted"]')
+    CONTINUE_BTTN = ('css selector', '[data-qa="continue-button"]')
 
     @allure.step("Click continue button")
     def click_continue_button(self):

@@ -8,8 +8,8 @@ class AccountCreatedPage(BasePage):
 
     # PAGE_URL= Links.
 
-    ACCOUNT_CREATED_MSSG = ('xpath', '[data-qa="account-created"]')
-    CONTINUE_BTTN = ('xpath', '[data-qa="continue-button"]')
+    ACCOUNT_CREATED_MSSG = ('css selector', '[data-qa="account-created"]')
+    CONTINUE_BTTN = ('css selector', '[data-qa="continue-button"]')
 
     @allure.step("Click continue button")
     def click_continue_button(self):
