@@ -5,7 +5,7 @@ from pages.account_deleted_page import AccountDeletedPage
 from pages.home_page import HomePage
 from pages.signup_login_page import SignupLoginPage
 from pages.signup_page import SignupPage
-from pages.test_cases_page import TestCasesPage
+from pages.testcases_page import TestCasesPage
 from pages.contact_us_page import ContactUsPage
 
 class BaseTest:
