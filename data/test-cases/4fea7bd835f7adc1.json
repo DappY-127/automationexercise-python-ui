@@ -1,36 +1,21 @@
 {
-  "uid" : "6389a3ec4e40ccc1",
-  "name" : "Contact Us Form",
-  "fullName" : "tests.customer_support_feature_test.TestContactUsFeature#test_contact_us_form",
-  "historyId" : "e65723a6056ad021773889a9622c5514",
+  "uid" : "4fea7bd835f7adc1",
+  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_scroll_up_arrow_bttn_with_scroll_down",
+  "historyId" : "812571f40d6906b321564172fa11f79d",
   "time" : {
-    "start" : 1704793927296,
-    "stop" : 1704793931863,
-    "duration" : 4567
+    "start" : 1704878905900,
+    "stop" : 1704878907940,
+    "duration" : 2040
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "browser",
-    "time" : {
-      "start" : 1704793926182,
-      "stop" : 1704793927145,
-      "duration" : 963
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
-  }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1704793926095,
-      "stop" : 1704793926182,
+      "start" : 1704878899782,
+      "stop" : 1704878899869,
       "duration" : 87
     },
     "status" : "passed",
@@ -44,9 +29,24 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1704793927145,
-      "stop" : 1704793927295,
-      "duration" : 150
+      "start" : 1704878905730,
+      "stop" : 1704878905899,
+      "duration" : 169
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1704878904841,
+      "stop" : 1704878905729,
+      "duration" : 888
     },
     "status" : "passed",
     "steps" : [ ],
@@ -62,9 +62,54 @@
     "steps" : [ {
       "name" : "Open https://automationexercise.com page",
       "time" : {
-        "start" : 1704793927296,
-        "stop" : 1704793928515,
-        "duration" : 1219
+        "start" : 1704878905900,
+        "stop" : 1704878907131,
+        "duration" : 1231
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Scroll down page to bottom",
+      "time" : {
+        "start" : 1704878907131,
+        "stop" : 1704878907136,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'SUBSCRIPTION' footer block visible",
+      "time" : {
+        "start" : 1704878907136,
+        "stop" : 1704878907365,
+        "duration" : 229
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click move upward arrow button",
+      "time" : {
+        "start" : 1704878907570,
+        "stop" : 1704878907623,
+        "duration" : 53
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +122,9 @@
     }, {
       "name" : "Site header visible",
       "time" : {
-        "start" : 1704793928515,
-        "stop" : 1704793928536,
-        "duration" : 21
+        "start" : 1704878907623,
+        "stop" : 1704878907638,
+        "duration" : 15
       },
       "status" : "passed",
       "steps" : [ ],
@@ -90,116 +135,11 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Click 'Contact Us' header button",
+      "name" : "'Full-Fledged practice website...' slider text label visible",
       "time" : {
-        "start" : 1704793928536,
-        "stop" : 1704793929457,
-        "duration" : 921
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "'Contact Us' send form visible",
-      "time" : {
-        "start" : 1704793929457,
-        "stop" : 1704793929622,
-        "duration" : 165
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Fill Contact Us form with random data",
-      "time" : {
-        "start" : 1704793929622,
-        "stop" : 1704793930046,
-        "duration" : 424
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Upload file to Contact Us form",
-      "time" : {
-        "start" : 1704793930046,
-        "stop" : 1704793930075,
-        "duration" : 29
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Click submit button",
-      "time" : {
-        "start" : 1704793930075,
-        "stop" : 1704793930138,
-        "duration" : 63
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Accept confirmation alert",
-      "time" : {
-        "start" : 1704793930138,
-        "stop" : 1704793930140,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Click Home button",
-      "time" : {
-        "start" : 1704793930294,
-        "stop" : 1704793931851,
-        "duration" : 1557
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Site header visible",
-      "time" : {
-        "start" : 1704793931851,
-        "stop" : 1704793931863,
-        "duration" : 12
+        "start" : 1704878907638,
+        "stop" : 1704878907670,
+        "duration" : 32
       },
       "status" : "passed",
       "steps" : [ ],
@@ -211,24 +151,30 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "d7e765938dfd2b5e",
-      "name" : "Success message",
-      "source" : "d7e765938dfd2b5e.png",
+      "uid" : "66eb725f01ebf551",
+      "name" : "page scrolled down",
+      "source" : "66eb725f01ebf551.png",
       "type" : "image/png",
-      "size" : 89706
+      "size" : 25563
+    }, {
+      "uid" : "72cdaf002fc36fb5",
+      "name" : "page scrolled up",
+      "source" : "72cdaf002fc36fb5.png",
+      "type" : "image/png",
+      "size" : 525495
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 1,
+    "attachmentsCount" : 2,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 10,
+    "stepsCount" : 6,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1704793931864,
-      "stop" : 1704793932010,
-      "duration" : 146
+      "start" : 1704878907940,
+      "stop" : 1704878908054,
+      "duration" : 114
     },
     "status" : "passed",
     "steps" : [ ],
@@ -241,25 +187,28 @@
   } ],
   "labels" : [ {
     "name" : "severity",
-    "value" : "critical"
+    "value" : "normal"
   }, {
     "name" : "feature",
-    "value" : "Customer Support"
+    "value" : "Interface & Navigation"
   }, {
     "name" : "tag",
-    "value" : "TestCaseID: 6"
+    "value" : "TestCaseID: 25"
+  }, {
+    "name" : "story",
+    "value" : "Scroll Functionality"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "customer_support_feature_test"
+    "value" : "scrolling_feature_test"
   }, {
     "name" : "subSuite",
-    "value" : "TestContactUsFeature"
+    "value" : "TestScrollingFeature"
   }, {
     "name" : "host",
-    "value" : "a77a1b7077b5"
+    "value" : "d2bec375ce19"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -271,7 +220,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.customer_support_feature_test"
+    "value" : "tests.scrolling_feature_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -281,11 +230,30 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "critical",
+    "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ "TestCaseID: 6" ]
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "93489a32483cc96d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793933036,
+          "stop" : 1704793935513,
+          "duration" : 2477
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 25" ]
   },
-  "source" : "6389a3ec4e40ccc1.json",
+  "source" : "4fea7bd835f7adc1.json",
   "parameterValues" : [ ]
 }

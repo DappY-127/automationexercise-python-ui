@@ -1,22 +1,22 @@
 {
-  "uid" : "7b69c16b975d3996",
-  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
-  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_test_scroll_up_scroll_down",
-  "historyId" : "83496b0bebf58a3537e5f25b90760d3f",
+  "uid" : "ac6ff5c32c0c7949",
+  "name" : "Verify Test Cases Page",
+  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_verify_testcase_page",
+  "historyId" : "273aad17eb8d3a2c2195e499aa172817",
   "time" : {
-    "start" : 1704793936657,
-    "stop" : 1704793938618,
-    "duration" : 1961
+    "start" : 1704878912187,
+    "stop" : 1704878915974,
+    "duration" : 3787
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "browser",
+    "name" : "_session_faker",
     "time" : {
-      "start" : 1704793935628,
-      "stop" : 1704793936503,
-      "duration" : 875
+      "start" : 1704878899782,
+      "stop" : 1704878899869,
+      "duration" : 87
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "_session_faker",
+    "name" : "browser",
     "time" : {
-      "start" : 1704793926095,
-      "stop" : 1704793926182,
-      "duration" : 87
+      "start" : 1704878911160,
+      "stop" : 1704878911998,
+      "duration" : 838
     },
     "status" : "passed",
     "steps" : [ ],
@@ -44,9 +44,9 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1704793936503,
-      "stop" : 1704793936656,
-      "duration" : 153
+      "start" : 1704878911998,
+      "stop" : 1704878912187,
+      "duration" : 189
     },
     "status" : "passed",
     "steps" : [ ],
@@ -62,54 +62,9 @@
     "steps" : [ {
       "name" : "Open https://automationexercise.com page",
       "time" : {
-        "start" : 1704793936657,
-        "stop" : 1704793937876,
-        "duration" : 1219
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Scroll down page to bottom",
-      "time" : {
-        "start" : 1704793937876,
-        "stop" : 1704793937884,
-        "duration" : 8
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "'SUBSCRIPTION' footer block visible",
-      "time" : {
-        "start" : 1704793937884,
-        "stop" : 1704793938075,
-        "duration" : 191
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "Scroll up",
-      "time" : {
-        "start" : 1704793938272,
-        "stop" : 1704793938276,
-        "duration" : 4
+        "start" : 1704878912187,
+        "stop" : 1704878913686,
+        "duration" : 1499
       },
       "status" : "passed",
       "steps" : [ ],
@@ -122,9 +77,9 @@
     }, {
       "name" : "Site header visible",
       "time" : {
-        "start" : 1704793938276,
-        "stop" : 1704793938291,
-        "duration" : 15
+        "start" : 1704878913687,
+        "stop" : 1704878913709,
+        "duration" : 22
       },
       "status" : "passed",
       "steps" : [ ],
@@ -135,11 +90,26 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "'Full-Fledged practice website...' slider text label visible",
+      "name" : "Click 'Test Cases' header button",
       "time" : {
-        "start" : 1704793938291,
-        "stop" : 1704793938326,
-        "duration" : 35
+        "start" : 1704878913709,
+        "stop" : 1704878915517,
+        "duration" : 1808
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Test cases panels visible",
+      "time" : {
+        "start" : 1704878915517,
+        "stop" : 1704878915753,
+        "duration" : 236
       },
       "status" : "passed",
       "steps" : [ ],
@@ -151,30 +121,24 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "c425df4b1be39d69",
-      "name" : "page scrolled down",
-      "source" : "c425df4b1be39d69.png",
+      "uid" : "79d914b677fe1989",
+      "name" : "test case page",
+      "source" : "79d914b677fe1989.png",
       "type" : "image/png",
-      "size" : 25573
-    }, {
-      "uid" : "c7b12e6f3f200244",
-      "name" : "page scrolled up",
-      "source" : "c7b12e6f3f200244.png",
-      "type" : "image/png",
-      "size" : 504936
+      "size" : 325123
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 2,
+    "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 6,
+    "stepsCount" : 4,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1704793938619,
-      "stop" : 1704793938735,
-      "duration" : 116
+      "start" : 1704878915974,
+      "stop" : 1704878916094,
+      "duration" : 120
     },
     "status" : "passed",
     "steps" : [ ],
@@ -186,17 +150,14 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Interface & Navigation"
-  }, {
     "name" : "severity",
     "value" : "normal"
   }, {
-    "name" : "story",
-    "value" : "Scroll Functionality"
+    "name" : "feature",
+    "value" : "Interface & Navigation"
   }, {
     "name" : "tag",
-    "value" : "TestCaseID: 26"
+    "value" : "TestCaseID: 7"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
@@ -208,7 +169,7 @@
     "value" : "TestScrollingFeature"
   }, {
     "name" : "host",
-    "value" : "a77a1b7077b5"
+    "value" : "d2bec375ce19"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -233,8 +194,27 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
-    "tags" : [ "TestCaseID: 26" ]
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a9411ff25f95c390",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793939748,
+          "stop" : 1704793942097,
+          "duration" : 2349
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 7" ]
   },
-  "source" : "7b69c16b975d3996.json",
+  "source" : "ac6ff5c32c0c7949.json",
   "parameterValues" : [ ]
 }
