@@ -1,11 +1,14 @@
 import allure
 from allure_commons.types import AttachmentType
 from faker import Faker
+from .header_footer_elements import HeaderFooterElements
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 
 
-class BasePage():
+class BasePage(HeaderFooterElements):
 
     def __init__(self, browser):
         self.browser = browser
@@ -32,4 +35,14 @@ class BasePage():
         # field = self.wait.until(EC.element_to_be_clickable(locator))
         field = self.wait.until(EC.visibility_of_element_located(locator))
         field.clear()
-        field.send_keys(value)        
+        field.send_keys(value)       
+
+    @allure.step("Scroll down page to bottom")
+    def page_scroll_down(self):
+        actions = ActionChains(self.browser)
+        actions.send_keys(Keys.END).perform()
+
+    @allure.step("Scroll up")
+    def page_scroll_up(self):
+        actions = ActionChains(self.browser)
+        actions.send_keys(Keys.HOME).perform()
