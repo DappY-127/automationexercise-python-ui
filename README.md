@@ -5,9 +5,9 @@ Implementation of automation of test [scenarios](https://automationexercise.com/
 ## Work on the project is in progress
 
 The basic structure for test implementation has been written.
-2 out of 26 automated tests have been developed
+6 out of 26 automated tests have been developed
 
-![Progress](https://progress-bar.dev/7/?title=done)
+![Progress](https://progress-bar.dev/23/?title=done)
 
 ## List of tested features 
 
@@ -41,8 +41,8 @@ The basic structure for test implementation has been written.
 
 ### Shopping & Checkout:
    - Subscription Handling:
-     - [ ] Verify Subscription in Home Page (Test Case 10) - In Progress
-     - [ ] Verify Subscription in Cart Page (Test Case 11) - In Progress
+     - [x] Verify Subscription in Home Page (Test Case 10) - Developed
+     - [x] Verify Subscription in Cart Page (Test Case 11) - Developed
    - Checkout Process:
      - [ ] Place Order: Register While Checkout (Test Case 14) - Not Developed
      - [ ] Place Order: Register Before Checkout (Test Case 15) - Not Developed

@@ -27,6 +27,7 @@ class ContactUsPage(BasePage):
         self.wait.until(EC.visibility_of_element_located(self.MESSAGE_FIELD))
         self.wait.until(EC.visibility_of_element_located(self.FILE_INPUT))
         self.wait.until(EC.visibility_of_element_located(self.SUBMIT_BTTN))
+        self.make_screenshot("Contact Us form")
 
     @allure.step("Click Home button")
     def click_home_bttn(self):
@@ -47,7 +48,8 @@ class ContactUsPage(BasePage):
         self.fill_field(self.NAME_FIELD, self.fake.name())
         self.fill_field(self.EMAIL_FIELD, self.fake.email())
         self.fill_field(self.SUBJECT_FIELD, self.fake.sentence())
-        self.fill_field(self.MESSAGE_FIELD, self.fake.paragraph())      
+        self.fill_field(self.MESSAGE_FIELD, self.fake.paragraph()) 
+        self.make_screenshot('Filled form')     
 
     @allure.step("Click submit button")
     def click_continue_button(self):

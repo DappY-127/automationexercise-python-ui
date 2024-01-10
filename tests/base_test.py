@@ -7,6 +7,7 @@ from pages.signup_login_page import SignupLoginPage
 from pages.signup_page import SignupPage
 from pages.testcases_page import TestCasesPage
 from pages.contact_us_page import ContactUsPage
+from pages.cart_page import CartPage
 
 class BaseTest:
 
@@ -19,6 +20,7 @@ class BaseTest:
     signup_page: SignupPage
     test_cases_page: TestCasesPage
     contact_us_page: ContactUsPage
+    cart_page: CartPage
 
     @pytest.fixture(autouse=True)
     def setup(self, request, browser):
@@ -32,6 +34,7 @@ class BaseTest:
         request.cls.signup_page = SignupPage(browser)
         request.cls.test_cases_page = TestCasesPage(browser)
         request.cls.contact_us_page = ContactUsPage(browser)
+        request.cls.cart_page = CartPage(browser)
 
 
     # Сюди додати потім реєстрацію/видалення акаунту бо воно майже в кожному тесткейсі буде 
