@@ -11,6 +11,7 @@ class TestScrollingFeature(BaseTest):
     @allure.tag('TestCaseID: 25')
     def test_scroll_up_arrow_bttn_with_scroll_down(self):
         self.home_page.open()
+        self.home_page.is_opened()
         self.home_page.page_scroll_down()
         self.home_page.is_subscription_label_visible()
         self.home_page.make_screenshot("page scrolled down")
@@ -25,6 +26,7 @@ class TestScrollingFeature(BaseTest):
     @allure.tag('TestCaseID: 26')
     def test_test_scroll_up_scroll_down(self):
         self.home_page.open()
+        self.home_page.is_opened()
         self.home_page.page_scroll_down()
         self.home_page.is_subscription_label_visible()
         self.home_page.make_screenshot("page scrolled down")
@@ -40,6 +42,7 @@ class TestScrollingFeature(BaseTest):
         self.home_page.open()
         self.home_page.is_header_visible()
         self.home_page.click_testcases_button()
+        self.test_cases_page.is_opened()
         self.test_cases_page.is_testcases_visible()
         self.home_page.make_screenshot("test case page")
 

@@ -11,6 +11,7 @@ class TestShoppingCheckoutFeature(BaseTest):
     @allure.tag('TestCaseID: 10')
     def test_verify_subscription_at_home_page(self):
         self.home_page.open()
+        self.home_page.is_opened()
         self.home_page.page_scroll_down()
         self.home_page.is_subscription_label_visible()
         self.home_page.fill_subscription_email()
@@ -23,7 +24,9 @@ class TestShoppingCheckoutFeature(BaseTest):
     @allure.tag('TestCaseID: 11')
     def test_verify_subscription_at_cart_page(self):
         self.home_page.open()
+        self.home_page.is_opened()
         self.home_page.click_cart_button()
+        self.cart_page.is_opened()
         self.cart_page.is_header_visible()
         self.cart_page.page_scroll_down()
         self.cart_page.is_subscription_label_visible()

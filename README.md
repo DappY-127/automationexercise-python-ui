@@ -28,10 +28,10 @@ The basic structure for test implementation has been written.
 
 ### Product Management:
    - Product Display & Information:
-     - [ ] Verify All Products and Product Detail Page (Test Case 8) - Not Developed
-     - [ ] View Category Products (Test Case 18) - Not Developed
-     - [ ] View & Cart Brand Products (Test Case 19) - Not Developed
-     - [ ] Search Product (Test Case 9) - Not Developed
+     - [ ] Verify All Products and Product Detail Page (Test Case 8) - In Progress
+     - [ ] View Category Products (Test Case 18) - In Progress
+     - [ ] View & Cart Brand Products (Test Case 19) - In Progress
+     - [ ] Search Product (Test Case 9) - In Progress
    - Cart & Wishlist:
      - [ ] Add Products in Cart (Test Case 12) - Not Developed
      - [ ] Verify Product Quantity in Cart (Test Case 13) - Not Developed

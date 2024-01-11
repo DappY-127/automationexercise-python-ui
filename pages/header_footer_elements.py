@@ -43,6 +43,10 @@ class HeaderFooterElements():
     def click_cart_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_CART_BTTN)).click()
 
+    @allure.step("Click products header button")
+    def click_products_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.HEADER_PRODUCTS_BTTN)).click()
+
     @allure.step("'SUBSCRIPTION' footer block visible")
     def is_subscription_label_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.SUBSCRIPTION_TEXT))
