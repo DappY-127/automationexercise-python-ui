@@ -1,6 +1,5 @@
 import allure
 from .base_test import BaseTest
-import time
 
 
 @allure.feature("Shopping & Checkout")
@@ -14,9 +13,7 @@ class TestShoppingCheckoutFeature(BaseTest):
         self.home_page.open()
         self.home_page.page_scroll_down()
         self.home_page.is_subscription_label_visible()
-        time.sleep(3)
         self.home_page.fill_subscription_email()
-        time.sleep(3)
         self.home_page.click_subscribe_button()     
         self.home_page.is_succes_subscription_mssg_visible()   
 
@@ -30,9 +27,7 @@ class TestShoppingCheckoutFeature(BaseTest):
         self.cart_page.is_header_visible()
         self.cart_page.page_scroll_down()
         self.cart_page.is_subscription_label_visible()
-        time.sleep(3)
         self.cart_page.fill_subscription_email()
-        time.sleep(3)
         self.cart_page.click_subscribe_button()     
         self.cart_page.is_succes_subscription_mssg_visible() 
 
