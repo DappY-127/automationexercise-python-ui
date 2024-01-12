@@ -34,15 +34,26 @@ class SignupPage(BasePage):
     def click_create_account_button(self):
         self.wait.until(EC.element_to_be_clickable(self.CREATE_ACC_BTTN)).click()
 
-    # @allure.step("Fill 'Enter Account Information' section")
-    # def fill_account_info_section(self):
-    #     pass
+    @allure.step("Fill 'Enter Account Information' section")
+    def fill_account_info_section(self):
+        self.select_radio_button(self.MR_RADIO_BTTN)
+        self.select_option(self.BIRTH_DAY_SELECT, str(self.fake.random_int(min=1, max=31)))
+        self.select_option(self.BIRTH_MONTH_SELECT, str(self.fake.month_name()))
+        self.select_option(self.BIRTH_YEAR_SELECT, str(self.fake.random_int(min=1900, max=2021)))
+        self.select_checkbox(self.NEWSLETTER_CHECKBOX)
+        self.select_checkbox(self.SPECIAL_OFFERS_CHECKBOX)
 
-    # @allure.step("Fill 'Address Information' section")
-    # def fill_address_info_section(self):
-    #     pass
-
-    # @allure.step("Fill First name")
-    # def fill_(self):
-    #     pass
-
+    @allure.step("Fill 'Address Information' section")
+    def fill_address_info_section(self):
+        self.fill_field(self.FIRST_NAME_FIELD, self.fake.first_name())
+        self.fill_field(self.LAST_NAME_FIELD, self.fake.last_name())
+        self.fill_field(self.COMPANY_FIELD, self.fake.company())
+        self.fill_field(self.ADDRESS_FIELD, self.fake.street_address()) 
+        self.fill_field(self.ADDRESS2_FIELD, self.fake.secondary_address()) 
+        self.select_option(self.COUNTRY_SELECT, "Canada")
+        self.fill_field(self.STATE_FIELD, self.fake.state()) 
+        self.fill_field(self.CITY_FIELD, self.fake.city()) 
+        self.fill_field(self.ZIP_FIELD, self.fake.zipcode()) 
+        self.fill_field(self.MOBILE_NUMBER_FIELD, self.fake.phone_number()) 
+        self.make_screenshot('Filled form')
+  
