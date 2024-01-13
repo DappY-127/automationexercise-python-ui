@@ -2,9 +2,14 @@ import allure
 from .base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
+from config.data import Data
 
 
 class SignupPage(BasePage):
+
+    def __init__(self, browser):
+        super().__init__(browser)
+        self.data = Data()
 
     PAGE_URL= Links.SIGNUP_PAGE
 
@@ -37,23 +42,24 @@ class SignupPage(BasePage):
     @allure.step("Fill 'Enter Account Information' section")
     def fill_account_info_section(self):
         self.select_radio_button(self.MR_RADIO_BTTN)
-        self.select_option(self.BIRTH_DAY_SELECT, str(self.fake.random_int(min=1, max=31)))
-        self.select_option(self.BIRTH_MONTH_SELECT, str(self.fake.month_name()))
-        self.select_option(self.BIRTH_YEAR_SELECT, str(self.fake.random_int(min=1900, max=2021)))
+        self.select_option(self.BIRTH_DAY_SELECT, self.data.birth_day)
+        self.select_option(self.BIRTH_MONTH_SELECT, self.data.birth_month)
+        self.select_option(self.BIRTH_YEAR_SELECT, self.data.birth_year)
         self.select_checkbox(self.NEWSLETTER_CHECKBOX)
         self.select_checkbox(self.SPECIAL_OFFERS_CHECKBOX)
+        self.make_screenshot('Filled account information section form')
 
     @allure.step("Fill 'Address Information' section")
     def fill_address_info_section(self):
-        self.fill_field(self.FIRST_NAME_FIELD, self.fake.first_name())
-        self.fill_field(self.LAST_NAME_FIELD, self.fake.last_name())
-        self.fill_field(self.COMPANY_FIELD, self.fake.company())
-        self.fill_field(self.ADDRESS_FIELD, self.fake.street_address()) 
-        self.fill_field(self.ADDRESS2_FIELD, self.fake.secondary_address()) 
-        self.select_option(self.COUNTRY_SELECT, "Canada")
-        self.fill_field(self.STATE_FIELD, self.fake.state()) 
-        self.fill_field(self.CITY_FIELD, self.fake.city()) 
-        self.fill_field(self.ZIP_FIELD, self.fake.zipcode()) 
-        self.fill_field(self.MOBILE_NUMBER_FIELD, self.fake.phone_number()) 
-        self.make_screenshot('Filled form')
+        self.fill_field(self.FIRST_NAME_FIELD, self.data.first_name)
+        self.fill_field(self.LAST_NAME_FIELD, self.data.last_name)
+        self.fill_field(self.COMPANY_FIELD, self.data.company)
+        self.fill_field(self.ADDRESS_FIELD, self.data.street_address) 
+        self.fill_field(self.ADDRESS2_FIELD, self.data.secondary_address) 
+        self.select_option(self.COUNTRY_SELECT, self.data.country)
+        self.fill_field(self.STATE_FIELD, self.data.state) 
+        self.fill_field(self.CITY_FIELD, self.data.city) 
+        self.fill_field(self.ZIP_FIELD, self.data.zipcode) 
+        self.fill_field(self.MOBILE_NUMBER_FIELD, self.data.phone_number) 
+        self.make_screenshot('Filled addres section form')
   

@@ -3,9 +3,14 @@ import random
 from .base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
+from config.data import Data
 
 
 class SignupLoginPage(BasePage):
+
+    def __init__(self, browser):
+        super().__init__(browser)
+        self.data = Data()
 
     PAGE_URL= Links.SIGNUP_LOGIN_PAGE
 
@@ -20,27 +25,13 @@ class SignupLoginPage(BasePage):
     INVALID_MAIL_PASSWORD_MSG = ('xpath', '//*[text()="Your email or password is incorrect!"]')
     EMAIL_EXIST_ERR_MSG = ('xpath', '//*[text()="Email Address already exist!"]')
 
-    def __init__(self, driver):
-        super().__init__(driver)
-        self.LOGIN_EMAIL = self.generate_random_email()
-        self.LOGIN_NAME = self.fake.name()
-
-    @staticmethod
-    def generate_random_email():
-        random_number = random.randint(0, 9999)  # Generates a random 4-digit number
-        return f"testmail{random_number}@mail.com"
-
     @allure.step("Enter name for signup")
     def enter_signup_name(self):
-        self.fill_field(self.SIGNUP_NAME_FIELD, self.LOGIN_NAME)
-        # self.wait.until(EC.element_to_be_clickable(self.SIGNUP_NAME_FIELD)).send_keys(self.LOGIN_NAME)
-        print(self.LOGIN_NAME)
+        self.fill_field(self.SIGNUP_NAME_FIELD, self.data.login_name)
 
     @allure.step("Enter email for signup")
     def enter_signup_email(self):
-        self.fill_field(self.SIGNUP_EMAIL_ADDRESS_FIELD, self.LOGIN_EMAIL)
-        # self.wait.until(EC.element_to_be_clickable(self.SIGNUP_EMAIL_ADDRESS_FIELD)).send_keys(self.LOGIN_EMAIL)
-        print(self.LOGIN_EMAIL)
+        self.fill_field(self.SIGNUP_EMAIL_ADDRESS_FIELD, self.data.email)
 
     @allure.step("Click signup button")
     def click_signup_button(self):
