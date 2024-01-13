@@ -2,14 +2,9 @@ import allure
 from .base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
-from config.data import Data
 
 
 class SignupPage(BasePage):
-
-    def __init__(self, browser):
-        super().__init__(browser)
-        self.data = Data()
 
     PAGE_URL= Links.SIGNUP_PAGE
 

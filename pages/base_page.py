@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
+from config.data import Data
 
 
 class BasePage(HeaderFooterElements):
@@ -16,6 +17,7 @@ class BasePage(HeaderFooterElements):
         self.browser = browser
         self.wait = WebDriverWait(browser, 10, poll_frequency=1)
         self.fake = Faker()
+        self.data = Data()
 
     def open(self):
         with allure.step(f"Open {self.PAGE_URL} page"):
