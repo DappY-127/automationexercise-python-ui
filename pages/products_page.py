@@ -14,6 +14,8 @@ class ProductsPage(BasePage):
     ALL_PRODUCTS = ("css selector", ".features_items")
     PRODUCTS_SEARCH_FIELD = ("css selector", "#search_product")
     SUBMIT_SEARCH_BTTN = ("css selector", "#submit_search")
+    # FIRST_PRODUCT_CARD = ()
+    FIRST_PRODUCT_CARD_VIEW_PRODUCT_BTTN = ("css selector", ".choose [href='/product_details/1']")
 
     @allure.step("'ALL PRODUCTS' page visible")
     def is_products_visible(self):
