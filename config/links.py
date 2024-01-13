@@ -10,4 +10,6 @@ class Links:
     SIGNUP_PAGE = f"{HOST}signup"
     TEST_CASES_PAGE = f"{HOST}test_cases"
     CONTACT_US_PAGE = f"{HOST}contact_us"
+    ACCOUNT_CREATED_PAGE = f"{HOST}account_created"
+    ACCOUNT_DELETED_PAGE = f"{HOST}delete_account"
     # API_TESTING_PAGE = f"{HOST}/"

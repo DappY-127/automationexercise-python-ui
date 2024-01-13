@@ -8,8 +8,6 @@ class HomePage(BasePage):
 
     PAGE_URL= Links.HOME_PAGE
 
-    USERNAME_FIELD = ("xpath", "//input[@name='username']")
-    USER_STATUS = ('xpath', '//a[contains(text(), "Logged in as")]')
     SCROLL_UP_BTTN = ('css selector', '#scrollUp')
     ACTIVE_SLIDER_TEXT = ("xpath", "//div[@class = 'item active']//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]")
 

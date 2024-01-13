@@ -22,6 +22,17 @@ class TestRegistrationFeature(BaseTest):
         self.signup_page.is_opened()
         self.signup_page.fill_account_info_section()
         self.signup_page.fill_address_info_section()
+        self.signup_page.click_create_account_button()
+        self.account_created_page.is_opened()
+        self.account_created_page.is_account_created_message_visible()
+        self.account_created_page.click_continue_button()
+        self.home_page.is_opened()
+        self.home_page.is_user_name_header_visible()
+        self.home_page.click_delete_account_button()
+        self.account_deleted_page.is_opened()
+        self.account_deleted_page.is_account_deleted_message_visible()
+        self.account_deleted_page.click_continue_button()
+        self.home_page.is_opened()
 
 
 #         # self.signup_page.is.....

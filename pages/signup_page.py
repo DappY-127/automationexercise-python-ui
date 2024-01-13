@@ -8,7 +8,7 @@ class SignupPage(BasePage):
 
     PAGE_URL= Links.SIGNUP_PAGE
 
-    CREATE_ACC_BTTN = ('xpath', '[data-qa="create-account"]')
+    CREATE_ACC_BTTN = ('css selector', '[data-qa="create-account"]')
     MR_RADIO_BTTN = ('css selector', '#id_gender1')
     MRS_RADIO_BTTN = ('css selector', '#id_gender2')
     NAME_FIELD = ('css selector', '#name')
@@ -37,6 +37,7 @@ class SignupPage(BasePage):
     @allure.step("Fill 'Enter Account Information' section")
     def fill_account_info_section(self):
         self.select_radio_button(self.MR_RADIO_BTTN)
+        self.fill_field(self.PASSWORD_FIELD, self.data.password)
         self.select_option(self.BIRTH_DAY_SELECT, self.data.birth_day)
         self.select_option(self.BIRTH_MONTH_SELECT, self.data.birth_month)
         self.select_option(self.BIRTH_YEAR_SELECT, self.data.birth_year)

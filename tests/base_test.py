@@ -43,7 +43,16 @@ class BaseTest:
         request.cls.product_details_page = ProductDetailsPage(browser)
 
     def account_register(self):
-        pass        
+        self.home_page.open()
+        self.home_page.is_opened()
+        self.home_page.click_signup_login_button()
+        self.signup_login_page.is_opened()
+        self.signup_login_page.enter_signup_name()
+        self.signup_login_page.enter_signup_email()
+        self.signup_login_page.click_signup_button()
+        self.signup_page.is_opened()
+        self.signup_page.fill_account_info_section()
+        self.signup_page.fill_address_info_section()
 
     def account_login(self):
         pass        
