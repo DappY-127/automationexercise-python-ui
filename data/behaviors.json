@@ -1,5 +1,124 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Customer Support",
+    "children" : [ {
+      "name" : "Contact Us Form",
+      "uid" : "de0a2e869d4d545d",
+      "parentUid" : "9bf97060ccde1345fbd62d132bd91b64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1705176845314,
+        "stop" : 1705176849346,
+        "duration" : 4032
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9bf97060ccde1345fbd62d132bd91b64"
+  }, {
+    "name" : "Interface & Navigation",
+    "children" : [ {
+      "name" : "Scroll Functionality",
+      "children" : [ {
+        "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+        "uid" : "c0cb8895fa7615a2",
+        "parentUid" : "479ce508bce6c5567cd91d405043bf94",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176850571,
+          "stop" : 1705176853152,
+          "duration" : 2581
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+        "uid" : "988051c387c58fd6",
+        "parentUid" : "479ce508bce6c5567cd91d405043bf94",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176854382,
+          "stop" : 1705176857064,
+          "duration" : 2682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "479ce508bce6c5567cd91d405043bf94"
+    }, {
+      "name" : "Verify Test Cases Page",
+      "uid" : "80aeda1e8054700f",
+      "parentUid" : "0fdb1f9e7bb9c77df780942b5541f89c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1705176858255,
+        "stop" : 1705176863191,
+        "duration" : 4936
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0fdb1f9e7bb9c77df780942b5541f89c"
+  }, {
+    "name" : "Shopping & Checkout",
+    "children" : [ {
+      "name" : "Subscription Handling",
+      "children" : [ {
+        "name" : "Verify Subscription in home page",
+        "uid" : "338147da261638ef",
+        "parentUid" : "4f26368804f01660217773ab67905805",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176864407,
+          "stop" : 1705176866783,
+          "duration" : 2376
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Subscription in cart page",
+        "uid" : "2e55ada22400a7f8",
+        "parentUid" : "4f26368804f01660217773ab67905805",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176867980,
+          "stop" : 1705176870138,
+          "duration" : 2158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4f26368804f01660217773ab67905805"
+    } ],
+    "uid" : "2b3882ec55ec5e64d01bbad5c589847e"
+  }, {
+    "name" : "Registration Functionality",
+    "children" : [ {
+      "name" : "User registration",
+      "children" : [ {
+        "name" : "Register User",
+        "uid" : "37973afe767c07ba",
+        "parentUid" : "a9f5d7e520479e6e82cbad4e25fc5120",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176871333,
+          "stop" : 1705176879188,
+          "duration" : 7855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a9f5d7e520479e6e82cbad4e25fc5120"
+    } ],
+    "uid" : "3e2a355d5946a5d454ef3f6055ec2d1b"
+  } ],
   "name" : "behaviors"
 }

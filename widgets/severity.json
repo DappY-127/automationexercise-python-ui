@@ -1,1 +1,71 @@
-[ ]
+[ {
+  "uid" : "988051c387c58fd6",
+  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1705176854382,
+    "stop" : 1705176857064,
+    "duration" : 2682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de0a2e869d4d545d",
+  "name" : "Contact Us Form",
+  "time" : {
+    "start" : 1705176845314,
+    "stop" : 1705176849346,
+    "duration" : 4032
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2e55ada22400a7f8",
+  "name" : "Verify Subscription in cart page",
+  "time" : {
+    "start" : 1705176867980,
+    "stop" : 1705176870138,
+    "duration" : 2158
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c0cb8895fa7615a2",
+  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1705176850571,
+    "stop" : 1705176853152,
+    "duration" : 2581
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "338147da261638ef",
+  "name" : "Verify Subscription in home page",
+  "time" : {
+    "start" : 1705176864407,
+    "stop" : 1705176866783,
+    "duration" : 2376
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "37973afe767c07ba",
+  "name" : "Register User",
+  "time" : {
+    "start" : 1705176871333,
+    "stop" : 1705176879188,
+    "duration" : 7855
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "80aeda1e8054700f",
+  "name" : "Verify Test Cases Page",
+  "time" : {
+    "start" : 1705176858255,
+    "stop" : 1705176863191,
+    "duration" : 4936
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

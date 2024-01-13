@@ -1,5 +1,132 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "customer_support_feature_test",
+      "children" : [ {
+        "name" : "TestContactUsFeature",
+        "children" : [ {
+          "name" : "Contact Us Form",
+          "uid" : "de0a2e869d4d545d",
+          "parentUid" : "a60bb257938f852a485f69b32203e053",
+          "status" : "passed",
+          "time" : {
+            "start" : 1705176845314,
+            "stop" : 1705176849346,
+            "duration" : 4032
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a60bb257938f852a485f69b32203e053"
+      } ],
+      "uid" : "92279b414055ece8fc1045542baf09f8"
+    }, {
+      "name" : "scrolling_feature_test",
+      "children" : [ {
+        "name" : "TestScrollingFeature",
+        "children" : [ {
+          "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+          "uid" : "c0cb8895fa7615a2",
+          "parentUid" : "0bd160003c4b9bdd59e32c1f2f32cd67",
+          "status" : "passed",
+          "time" : {
+            "start" : 1705176850571,
+            "stop" : 1705176853152,
+            "duration" : 2581
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+          "uid" : "988051c387c58fd6",
+          "parentUid" : "0bd160003c4b9bdd59e32c1f2f32cd67",
+          "status" : "passed",
+          "time" : {
+            "start" : 1705176854382,
+            "stop" : 1705176857064,
+            "duration" : 2682
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify Test Cases Page",
+          "uid" : "80aeda1e8054700f",
+          "parentUid" : "0bd160003c4b9bdd59e32c1f2f32cd67",
+          "status" : "passed",
+          "time" : {
+            "start" : 1705176858255,
+            "stop" : 1705176863191,
+            "duration" : 4936
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0bd160003c4b9bdd59e32c1f2f32cd67"
+      } ],
+      "uid" : "76a88ac31c3dccb5b5fb2ef2160bfb6f"
+    }, {
+      "name" : "shopping_checkout_feature_test",
+      "children" : [ {
+        "name" : "TestShoppingCheckoutFeature",
+        "children" : [ {
+          "name" : "Verify Subscription in home page",
+          "uid" : "338147da261638ef",
+          "parentUid" : "68843fdb01eff4976be850c4c07a6f21",
+          "status" : "passed",
+          "time" : {
+            "start" : 1705176864407,
+            "stop" : 1705176866783,
+            "duration" : 2376
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Verify Subscription in cart page",
+          "uid" : "2e55ada22400a7f8",
+          "parentUid" : "68843fdb01eff4976be850c4c07a6f21",
+          "status" : "passed",
+          "time" : {
+            "start" : 1705176867980,
+            "stop" : 1705176870138,
+            "duration" : 2158
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "68843fdb01eff4976be850c4c07a6f21"
+      } ],
+      "uid" : "d70331fe6d26dabb85db5a4f06096a26"
+    }, {
+      "name" : "user_management_feature_test",
+      "children" : [ {
+        "name" : "TestRegistrationFeature",
+        "children" : [ {
+          "name" : "Register User",
+          "uid" : "37973afe767c07ba",
+          "parentUid" : "b93df714560e9a8f44e23dcf12f7b51b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1705176871333,
+            "stop" : 1705176879188,
+            "duration" : 7855
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b93df714560e9a8f44e23dcf12f7b51b"
+      } ],
+      "uid" : "15935863824f9ff83d89359fc06936cc"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ],
   "name" : "suites"
 }

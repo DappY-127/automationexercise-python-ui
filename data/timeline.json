@@ -1,5 +1,104 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "c68dc5d6a469",
+    "children" : [ {
+      "name" : "1-MainThread",
+      "children" : [ {
+        "name" : "Register User",
+        "uid" : "37973afe767c07ba",
+        "parentUid" : "deadb483e8c40542b265dd997c377386",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176871333,
+          "stop" : 1705176879188,
+          "duration" : 7855
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+        "uid" : "988051c387c58fd6",
+        "parentUid" : "deadb483e8c40542b265dd997c377386",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176854382,
+          "stop" : 1705176857064,
+          "duration" : 2682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+        "uid" : "c0cb8895fa7615a2",
+        "parentUid" : "deadb483e8c40542b265dd997c377386",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176850571,
+          "stop" : 1705176853152,
+          "duration" : 2581
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Subscription in cart page",
+        "uid" : "2e55ada22400a7f8",
+        "parentUid" : "deadb483e8c40542b265dd997c377386",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176867980,
+          "stop" : 1705176870138,
+          "duration" : 2158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Test Cases Page",
+        "uid" : "80aeda1e8054700f",
+        "parentUid" : "deadb483e8c40542b265dd997c377386",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176858255,
+          "stop" : 1705176863191,
+          "duration" : 4936
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Contact Us Form",
+        "uid" : "de0a2e869d4d545d",
+        "parentUid" : "deadb483e8c40542b265dd997c377386",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176845314,
+          "stop" : 1705176849346,
+          "duration" : 4032
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Subscription in home page",
+        "uid" : "338147da261638ef",
+        "parentUid" : "deadb483e8c40542b265dd997c377386",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176864407,
+          "stop" : 1705176866783,
+          "duration" : 2376
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "deadb483e8c40542b265dd997c377386"
+    } ],
+    "uid" : "ae5a7150381523ad1494a02c7152f2a9"
+  } ],
   "name" : "timeline"
 }

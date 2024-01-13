@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jan 13 20:14:05 GMT 2024","Sat Jan 13 20:14:09 GMT 2024","4032","tests","customer_support_feature_test","TestContactUsFeature","","","Contact Us Form",""
+"passed","Sat Jan 13 20:14:31 GMT 2024","Sat Jan 13 20:14:39 GMT 2024","7855","tests","user_management_feature_test","TestRegistrationFeature","","","Register User",""
+"passed","Sat Jan 13 20:14:10 GMT 2024","Sat Jan 13 20:14:13 GMT 2024","2581","tests","scrolling_feature_test","TestScrollingFeature","","","Scroll Up using 'Arrow' button and Scroll Down functionality",""
+"passed","Sat Jan 13 20:14:14 GMT 2024","Sat Jan 13 20:14:17 GMT 2024","2682","tests","scrolling_feature_test","TestScrollingFeature","","","Scroll Up without 'Arrow' button and Scroll Down functionality",""
+"passed","Sat Jan 13 20:14:27 GMT 2024","Sat Jan 13 20:14:30 GMT 2024","2158","tests","shopping_checkout_feature_test","TestShoppingCheckoutFeature","","","Verify Subscription in cart page",""
+"passed","Sat Jan 13 20:14:18 GMT 2024","Sat Jan 13 20:14:23 GMT 2024","4936","tests","scrolling_feature_test","TestScrollingFeature","","","Verify Test Cases Page",""
+"passed","Sat Jan 13 20:14:24 GMT 2024","Sat Jan 13 20:14:26 GMT 2024","2376","tests","shopping_checkout_feature_test","TestShoppingCheckoutFeature","","","Verify Subscription in home page",""
