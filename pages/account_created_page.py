@@ -18,6 +18,7 @@ class AccountCreatedPage(BasePage):
     @allure.step("User creation message visible")
     def is_account_created_message_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.ACCOUNT_CREATED_MSSG))
+        self.make_screenshot("User created")
 
 
 

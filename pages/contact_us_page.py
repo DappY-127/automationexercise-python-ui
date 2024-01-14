@@ -39,7 +39,8 @@ class ContactUsPage(BasePage):
     def upload_file_to_contact_us(self):
         file_input = self.wait.until(EC.visibility_of_element_located(self.FILE_INPUT))
         absolute_file_path = os.path.join(os.getcwd(), 'pages', 'resources', 'contactusfile.png')
-        file_input.send_keys(absolute_file_path)        
+        file_input.send_keys(absolute_file_path)
+        self.make_screenshot('File uploaded')         
         # absolute_file_path = os.path.abspath(file_path)
         # file_input.send_keys(absolute_file_path)     
 

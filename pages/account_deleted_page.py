@@ -18,3 +18,4 @@ class AccountDeletedPage(BasePage):
     @allure.step("User deletion message visible")
     def is_account_deleted_message_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.ACCOUNT_DELETED_MSSG))
+        self.make_screenshot("User deleted")
