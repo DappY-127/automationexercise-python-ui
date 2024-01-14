@@ -74,3 +74,13 @@ class BasePage(HeaderFooterElements):
     def page_scroll_up(self):
         actions = ActionChains(self.browser)
         actions.send_keys(Keys.HOME).perform()
+
+    @allure.step("Verify user status text")
+    def is_user_status_correct(self):
+        user_name = self.data.login_name
+        user_status_element = self.wait.until(EC.visibility_of_element_located(self.USER_STATUS))
+        user_status_text = user_status_element.text
+        expected_user_status = f'Logged in as {user_name}'
+
+        with allure.step(f"Verify user status text is correct for user {user_name}"):
+            assert user_status_text == expected_user_status, f"Expected: {expected_user_status}, Actual: {user_status_text}"     

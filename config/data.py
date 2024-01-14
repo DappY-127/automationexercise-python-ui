@@ -8,25 +8,34 @@ load_dotenv()
 
 class Data:
 
-    fake = Faker()
+    _instance = None  # Змінна для зберігання єдиного екземпляру
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(Data, cls).__new__(cls)
+            cls._instance._initialized = False
+        return cls._instance
 
     def __init__(self):
-        self.email = self.generate_random_email()
-        self.login_name = self.fake.name()
-        self.password = 'password123qwerty'
-        self.first_name = self.fake.first_name()
-        self.last_name = self.fake.last_name()
-        self.company = self.fake.company()
-        self.street_address = self.fake.street_address()
-        self.secondary_address = self.fake.secondary_address()
-        self.country = 'Canada'
-        self.state = self.fake.state()
-        self.city = self.fake.city()
-        self.zipcode = self.fake.zipcode()
-        self.phone_number = self.fake.phone_number()
-        self.birth_day = str(self.fake.random_int(min=1, max=31))
-        self.birth_month = self.fake.month_name()
-        self.birth_year = str(self.fake.random_int(min=1900, max=2021))
+        if not self._initialized:
+            self.fake = Faker()
+            self.email = self.generate_random_email()
+            self.login_name = self.fake.name()
+            self.password = 'password123qwerty'
+            self.first_name = self.fake.first_name()
+            self.last_name = self.fake.last_name()
+            self.company = self.fake.company()
+            self.street_address = self.fake.street_address()
+            self.secondary_address = self.fake.secondary_address()
+            self.country = 'Canada'
+            self.state = self.fake.state()
+            self.city = self.fake.city()
+            self.zipcode = self.fake.zipcode()
+            self.phone_number = self.fake.phone_number()
+            self.birth_day = str(self.fake.random_int(min=1, max=31))
+            self.birth_month = self.fake.month_name()
+            self.birth_year = str(self.fake.random_int(min=1900, max=2021))
+            self._initialized = True
 
     def generate_random_email(self):
         random_number = random.randint(0, 9999)

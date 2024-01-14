@@ -28,6 +28,7 @@ class TestRegistrationFeature(BaseTest):
         self.account_created_page.click_continue_button()
         self.home_page.is_opened()
         self.home_page.is_user_name_header_visible()
+        self.home_page.is_user_status_correct()
         self.home_page.click_delete_account_button()
         self.account_deleted_page.is_opened()
         self.account_deleted_page.is_account_deleted_message_visible()

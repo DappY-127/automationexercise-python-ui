@@ -71,15 +71,6 @@ class HeaderFooterElements():
         # self.wait.until(EC.visibility_of_element_located(self.USERNAME_FIELD))      
         # self.wait.until(EC.visibility_of_element_located(self.USER_STATUS))      
 
-    # def is_user_status_correct(self):
-    #     user_name = self.USER_STATUS.text
-    #     expected_user_status = f' Logged in as {user_name}'
-
-    #     if user_status_text == expected_user_status:
-    #         return True
-    #     else:
-    #         raise ValueError(f'User status incorrect. Expected: {expected_user_status}. Actual: {user_status_text}')
-
     @allure.step("Fill email in subscription field")
     def fill_subscription_email(self):
         self.fill_field(self.SUBSCRIPTION_EMAIL_FIELD, self.fake.email())          
