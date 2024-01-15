@@ -5,17 +5,17 @@ Implementation of automation of test [scenarios](https://automationexercise.com/
 ## Work on the project is in progress
 
 The basic structure for test implementation has been written.
-6 out of 26 automated tests have been developed
+9 out of 26 automated tests have been developed
 
-![Progress](https://progress-bar.dev/23/?title=done)
+![Progress](https://progress-bar.dev/33/?title=done)
 
 ## List of tested features 
 
 ### User Management:
    - User Authentication:
-     - [ ] User Registration (Test Case 1, Test Case 5) - In Progress
-     - [ ] User Login (Test Case 2, Test Case 3) - Not Developed
-     - [ ] User Logout (Test Case 4) - Not Developed
+     - [x] User Registration (Test Case 1, Test Case 5) - Developed
+     - [ ] User Login (Test Case 2, Test Case 3) - In Progress
+     - [ ] User Logout (Test Case 4) - In Progress
 
 ### Customer Support:
    - [x] Contact Us Form (Test Case 6) -  Developed
