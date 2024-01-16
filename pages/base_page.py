@@ -83,4 +83,15 @@ class BasePage(HeaderFooterElements):
         expected_user_status = f'Logged in as {user_name}'
 
         with allure.step(f"Verify user status text is correct for user {user_name}"):
-            assert user_status_text == expected_user_status, f"Expected: {expected_user_status}, Actual: {user_status_text}"     
+            assert user_status_text == expected_user_status, f"Expected: {expected_user_status}, Actual: {user_status_text}"
+
+    @allure.step("Scroll element into view")
+    def scroll_into_view(self, element_locator):
+        element = self.wait.until(EC.presence_of_element_located(element_locator))
+        self.browser.execute_script("arguments[0].scrollIntoView();", element)
+
+    @allure.step("Hover mouse over element")
+    def hover_over_element(self, element_locator):
+        element = self.wait.until(EC.presence_of_element_located(element_locator))
+        actions = ActionChains(self.browser)
+        actions.move_to_element(element).perform()                 

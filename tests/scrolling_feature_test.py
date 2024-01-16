@@ -24,7 +24,7 @@ class TestScrollingFeature(BaseTest):
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story("Scroll Functionality")
     @allure.tag('TestCaseID: 26')
-    def test_test_scroll_up_scroll_down(self):
+    def test_scroll_up_scroll_down(self):
         self.home_page.open()
         self.home_page.is_opened()
         self.home_page.page_scroll_down()
