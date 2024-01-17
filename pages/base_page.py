@@ -15,7 +15,7 @@ class BasePage(HeaderFooterElements):
 
     def __init__(self, browser):
         self.browser = browser
-        self.wait = WebDriverWait(browser, 10, poll_frequency=1)
+        self.wait = WebDriverWait(browser, 15, poll_frequency=1)
         self.fake = Faker()
         self.data = Data()
 

@@ -5,7 +5,7 @@ from pages.account_deleted_page import AccountDeletedPage
 from pages.home_page import HomePage
 from pages.signup_login_page import SignupLoginPage
 from pages.signup_page import SignupPage
-from pages.testcases_page import TestCasesPage
+from pages.testcases_page import SiteTestCasesPage
 from pages.contact_us_page import ContactUsPage
 from pages.cart_page import CartPage
 from pages.products_page import ProductsPage
@@ -20,7 +20,7 @@ class BaseTest:
     home_page: HomePage
     signup_login_page: SignupLoginPage
     signup_page: SignupPage
-    test_cases_page: TestCasesPage
+    test_cases_page: SiteTestCasesPage
     contact_us_page: ContactUsPage
     cart_page: CartPage
     products_page: ProductsPage
@@ -36,7 +36,7 @@ class BaseTest:
         request.cls.home_page = HomePage(browser)
         request.cls.signup_login_page = SignupLoginPage(browser)
         request.cls.signup_page = SignupPage(browser)
-        request.cls.test_cases_page = TestCasesPage(browser)
+        request.cls.test_cases_page = SiteTestCasesPage(browser)
         request.cls.contact_us_page = ContactUsPage(browser)
         request.cls.cart_page = CartPage(browser)
         request.cls.products_page = ProductsPage(browser)

@@ -4,7 +4,7 @@ from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class TestCasesPage(BasePage):
+class SiteTestCasesPage(BasePage):
     
     PAGE_URL= Links.TEST_CASES_PAGE
 
