@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
+      "children" : [ {
+        "name" : "Remove Products From Cart",
+        "uid" : "3f910d53c5e3a1c9",
+        "parentUid" : "9af4198acfe42d27f89a316515118129",
+        "status" : "broken",
+        "time" : {
+          "start" : 1705492216821,
+          "stop" : 1705492223802,
+          "duration" : 6981
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9af4198acfe42d27f89a316515118129"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

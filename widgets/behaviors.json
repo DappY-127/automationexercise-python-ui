@@ -1,8 +1,30 @@
 {
-  "total" : 4,
+  "total" : 5,
   "items" : [ {
+    "uid" : "c8c9d2bb401e599c2322125d8aa5c4ac",
+    "name" : "Product Management",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
     "uid" : "0fdb1f9e7bb9c77df780942b5541f89c",
     "name" : "Interface & Navigation",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "3e2a355d5946a5d454ef3f6055ec2d1b",
+    "name" : "Registration Functionality",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -25,17 +47,6 @@
   }, {
     "uid" : "2b3882ec55ec5e64d01bbad5c589847e",
     "name" : "Shopping & Checkout",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "3e2a355d5946a5d454ef3f6055ec2d1b",
-    "name" : "Registration Functionality",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

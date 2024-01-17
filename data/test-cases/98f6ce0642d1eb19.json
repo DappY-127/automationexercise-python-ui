@@ -1,22 +1,22 @@
 {
-  "uid" : "c0cb8895fa7615a2",
-  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
-  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_scroll_up_arrow_bttn_with_scroll_down",
-  "historyId" : "812571f40d6906b321564172fa11f79d",
+  "uid" : "98f6ce0642d1eb19",
+  "name" : "Verify Subscription in home page",
+  "fullName" : "tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature#test_verify_subscription_at_home_page",
+  "historyId" : "7ab66e62cedc2b865ece89b45e42d142",
   "time" : {
-    "start" : 1705176850571,
-    "stop" : 1705176853152,
-    "duration" : 2581
+    "start" : 1705492240984,
+    "stop" : 1705492242358,
+    "duration" : 1374
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "browser",
+    "name" : "setup",
     "time" : {
-      "start" : 1705176849493,
-      "stop" : 1705176850344,
-      "duration" : 851
+      "start" : 1705492240768,
+      "stop" : 1705492240983,
+      "duration" : 215
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "setup",
+    "name" : "browser",
     "time" : {
-      "start" : 1705176850345,
-      "stop" : 1705176850570,
-      "duration" : 225
+      "start" : 1705492239882,
+      "stop" : 1705492240768,
+      "duration" : 886
     },
     "status" : "passed",
     "steps" : [ ],
@@ -44,9 +44,9 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1705176844128,
-      "stop" : 1705176844149,
-      "duration" : 21
+      "start" : 1705492199299,
+      "stop" : 1705492199382,
+      "duration" : 83
     },
     "status" : "passed",
     "steps" : [ ],
@@ -62,9 +62,9 @@
     "steps" : [ {
       "name" : "Open https://automationexercise.com/ page",
       "time" : {
-        "start" : 1705176850571,
-        "stop" : 1705176852387,
-        "duration" : 1816
+        "start" : 1705492240984,
+        "stop" : 1705492241760,
+        "duration" : 776
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,8 +77,8 @@
     }, {
       "name" : "Page https://automationexercise.com/ is opened",
       "time" : {
-        "start" : 1705176852387,
-        "stop" : 1705176852390,
+        "start" : 1705492241760,
+        "stop" : 1705492241763,
         "duration" : 3
       },
       "status" : "passed",
@@ -92,8 +92,8 @@
     }, {
       "name" : "Scroll down page to bottom",
       "time" : {
-        "start" : 1705176852390,
-        "stop" : 1705176852394,
+        "start" : 1705492241764,
+        "stop" : 1705492241768,
         "duration" : 4
       },
       "status" : "passed",
@@ -107,9 +107,9 @@
     }, {
       "name" : "'SUBSCRIPTION' footer block visible",
       "time" : {
-        "start" : 1705176852395,
-        "stop" : 1705176852613,
-        "duration" : 218
+        "start" : 1705492241768,
+        "stop" : 1705492241976,
+        "duration" : 208
       },
       "status" : "passed",
       "steps" : [ ],
@@ -120,11 +120,47 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Click move upward arrow button",
+      "name" : "Fill email in subscription field",
       "time" : {
-        "start" : 1705176852789,
-        "stop" : 1705176852864,
-        "duration" : 75
+        "start" : 1705492241976,
+        "stop" : 1705492242079,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'loweryelizabeth@example.org'",
+        "time" : {
+          "start" : 1705492241977,
+          "stop" : 1705492242079,
+          "duration" : 102
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#susbscribe_email')"
+        }, {
+          "name" : "value",
+          "value" : "'loweryelizabeth@example.org'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click subscribe footer button",
+      "time" : {
+        "start" : 1705492242080,
+        "stop" : 1705492242169,
+        "duration" : 89
       },
       "status" : "passed",
       "steps" : [ ],
@@ -135,60 +171,39 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
-      "name" : "Site header visible",
+      "name" : "Succes subscription footer message visible",
       "time" : {
-        "start" : 1705176852864,
-        "stop" : 1705176852878,
-        "duration" : 14
+        "start" : 1705492242170,
+        "stop" : 1705492242358,
+        "duration" : 188
       },
       "status" : "passed",
       "steps" : [ ],
-      "attachments" : [ ],
+      "attachments" : [ {
+        "uid" : "c57fcc2ae87025e5",
+        "name" : "Success message",
+        "source" : "c57fcc2ae87025e5.png",
+        "type" : "image/png",
+        "size" : 31656
+      } ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
+      "attachmentsCount" : 1,
       "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
-    }, {
-      "name" : "'Full-Fledged practice website...' slider text label visible",
-      "time" : {
-        "start" : 1705176852878,
-        "stop" : 1705176852911,
-        "duration" : 33
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : true
     } ],
-    "attachments" : [ {
-      "uid" : "6a081b2b55b4df12",
-      "name" : "page scrolled down",
-      "source" : "6a081b2b55b4df12.png",
-      "type" : "image/png",
-      "size" : 25580
-    }, {
-      "uid" : "4ba07eac910545b",
-      "name" : "page scrolled up",
-      "source" : "4ba07eac910545b.png",
-      "type" : "image/png",
-      "size" : 412355
-    } ],
+    "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 2,
+    "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 7,
+    "stepsCount" : 8,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1705176853153,
-      "stop" : 1705176853266,
+      "start" : 1705492242359,
+      "stop" : 1705492242472,
       "duration" : 113
     },
     "status" : "passed",
@@ -201,29 +216,29 @@
     "hasContent" : false
   } ],
   "labels" : [ {
-    "name" : "feature",
-    "value" : "Interface & Navigation"
+    "name" : "story",
+    "value" : "Subscription Handling"
   }, {
     "name" : "tag",
-    "value" : "TestCaseID: 25"
-  }, {
-    "name" : "story",
-    "value" : "Scroll Functionality"
+    "value" : "TestCaseID: 10"
   }, {
     "name" : "severity",
-    "value" : "normal"
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "Shopping & Checkout"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "scrolling_feature_test"
+    "value" : "shopping_checkout_feature_test"
   }, {
     "name" : "subSuite",
-    "value" : "TestScrollingFeature"
+    "value" : "TestShoppingCheckoutFeature"
   }, {
     "name" : "host",
-    "value" : "c68dc5d6a469"
+    "value" : "67784a4c7c50"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -235,7 +250,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.scrolling_feature_test"
+    "value" : "tests.shopping_checkout_feature_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -245,7 +260,7 @@
   "hidden" : false,
   "retry" : false,
   "extra" : {
-    "severity" : "normal",
+    "severity" : "critical",
     "retries" : [ ],
     "categories" : [ ],
     "history" : {
@@ -258,25 +273,25 @@
         "total" : 3
       },
       "items" : [ {
-        "uid" : "4fea7bd835f7adc1",
+        "uid" : "338147da261638ef",
         "status" : "passed",
         "time" : {
-          "start" : 1704878905900,
-          "stop" : 1704878907940,
-          "duration" : 2040
+          "start" : 1705176864407,
+          "stop" : 1705176866783,
+          "duration" : 2376
         }
       }, {
-        "uid" : "93489a32483cc96d",
+        "uid" : "a814d6f17fb7fbb3",
         "status" : "passed",
         "time" : {
-          "start" : 1704793933036,
-          "stop" : 1704793935513,
-          "duration" : 2477
+          "start" : 1704878917117,
+          "stop" : 1704878924899,
+          "duration" : 7782
         }
       } ]
     },
-    "tags" : [ "TestCaseID: 25" ]
+    "tags" : [ "TestCaseID: 10" ]
   },
-  "source" : "c0cb8895fa7615a2.json",
+  "source" : "98f6ce0642d1eb19.json",
   "parameterValues" : [ ]
 }

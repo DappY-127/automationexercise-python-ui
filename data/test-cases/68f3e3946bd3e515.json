@@ -1,12 +1,12 @@
 {
-  "uid" : "37973afe767c07ba",
+  "uid" : "68f3e3946bd3e515",
   "name" : "Register User",
   "fullName" : "tests.user_management_feature_test.TestRegistrationFeature#test_register_user_with_valid_data",
   "historyId" : "ffc730d7ba52dac5c28e5c2c09182fb8",
   "time" : {
-    "start" : 1705176871333,
-    "stop" : 1705176879188,
-    "duration" : 7855
+    "start" : 1705492246556,
+    "stop" : 1705492255146,
+    "duration" : 8590
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1705176870253,
-      "stop" : 1705176871108,
-      "duration" : 855
+      "start" : 1705492245491,
+      "stop" : 1705492246339,
+      "duration" : 848
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,9 +29,9 @@
   }, {
     "name" : "setup",
     "time" : {
-      "start" : 1705176871108,
-      "stop" : 1705176871332,
-      "duration" : 224
+      "start" : 1705492246339,
+      "stop" : 1705492246555,
+      "duration" : 216
     },
     "status" : "passed",
     "steps" : [ ],
@@ -44,9 +44,9 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1705176844128,
-      "stop" : 1705176844149,
-      "duration" : 21
+      "start" : 1705492199299,
+      "stop" : 1705492199382,
+      "duration" : 83
     },
     "status" : "passed",
     "steps" : [ ],
@@ -62,9 +62,9 @@
     "steps" : [ {
       "name" : "Open https://automationexercise.com/ page",
       "time" : {
-        "start" : 1705176871333,
-        "stop" : 1705176872641,
-        "duration" : 1308
+        "start" : 1705492246556,
+        "stop" : 1705492247331,
+        "duration" : 775
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +77,9 @@
     }, {
       "name" : "Page https://automationexercise.com/ is opened",
       "time" : {
-        "start" : 1705176872641,
-        "stop" : 1705176872644,
-        "duration" : 3
+        "start" : 1705492247331,
+        "stop" : 1705492247336,
+        "duration" : 5
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,9 +92,9 @@
     }, {
       "name" : "Click Signup/Login header button",
       "time" : {
-        "start" : 1705176872644,
-        "stop" : 1705176873152,
-        "duration" : 508
+        "start" : 1705492247336,
+        "stop" : 1705492248295,
+        "duration" : 959
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,8 +107,8 @@
     }, {
       "name" : "Page https://automationexercise.com/login is opened",
       "time" : {
-        "start" : 1705176873152,
-        "stop" : 1705176873155,
+        "start" : 1705492248295,
+        "stop" : 1705492248298,
         "duration" : 3
       },
       "status" : "passed",
@@ -122,17 +122,17 @@
     }, {
       "name" : "Enter name for signup",
       "time" : {
-        "start" : 1705176873155,
-        "stop" : 1705176873271,
-        "duration" : 116
+        "start" : 1705492248298,
+        "stop" : 1705492248455,
+        "duration" : 157
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Fill field with value: 'Derrick Robinson'",
+        "name" : "Fill field with value: 'Scott Ross'",
         "time" : {
-          "start" : 1705176873155,
-          "stop" : 1705176873271,
-          "duration" : 116
+          "start" : 1705492248298,
+          "stop" : 1705492248455,
+          "duration" : 157
         },
         "status" : "passed",
         "steps" : [ ],
@@ -142,7 +142,7 @@
           "value" : "('css selector', '[data-qa=\"signup-name\"]')"
         }, {
           "name" : "value",
-          "value" : "'Derrick Robinson'"
+          "value" : "'Scott Ross'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -158,17 +158,17 @@
     }, {
       "name" : "Enter email for signup",
       "time" : {
-        "start" : 1705176873271,
-        "stop" : 1705176873355,
-        "duration" : 84
+        "start" : 1705492248455,
+        "stop" : 1705492248544,
+        "duration" : 89
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Fill field with value: 'testmail3561@mail.com'",
+        "name" : "Fill field with value: 'testmail7170@mail.com'",
         "time" : {
-          "start" : 1705176873271,
-          "stop" : 1705176873355,
-          "duration" : 84
+          "start" : 1705492248455,
+          "stop" : 1705492248544,
+          "duration" : 89
         },
         "status" : "passed",
         "steps" : [ ],
@@ -178,7 +178,7 @@
           "value" : "('css selector', '[data-qa=\"signup-email\"]')"
         }, {
           "name" : "value",
-          "value" : "'testmail3561@mail.com'"
+          "value" : "'testmail7170@mail.com'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -194,9 +194,9 @@
     }, {
       "name" : "Click signup button",
       "time" : {
-        "start" : 1705176873356,
-        "stop" : 1705176873981,
-        "duration" : 625
+        "start" : 1705492248544,
+        "stop" : 1705492249938,
+        "duration" : 1394
       },
       "status" : "passed",
       "steps" : [ ],
@@ -209,9 +209,9 @@
     }, {
       "name" : "Page https://automationexercise.com/signup is opened",
       "time" : {
-        "start" : 1705176873981,
-        "stop" : 1705176874005,
-        "duration" : 24
+        "start" : 1705492249938,
+        "stop" : 1705492249941,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -224,17 +224,17 @@
     }, {
       "name" : "Fill 'Enter Account Information' section",
       "time" : {
-        "start" : 1705176874005,
-        "stop" : 1705176874604,
-        "duration" : 599
+        "start" : 1705492249941,
+        "stop" : 1705492250609,
+        "duration" : 668
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Fill field with value: 'password123qwerty'",
         "time" : {
-          "start" : 1705176874063,
-          "stop" : 1705176874154,
-          "duration" : 91
+          "start" : 1705492250019,
+          "stop" : 1705492250122,
+          "duration" : 103
         },
         "status" : "passed",
         "steps" : [ ],
@@ -251,11 +251,11 @@
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Select option with value: '25'",
+        "name" : "Select option with value: '18'",
         "time" : {
-          "start" : 1705176874154,
-          "stop" : 1705176874242,
-          "duration" : 88
+          "start" : 1705492250122,
+          "stop" : 1705492250183,
+          "duration" : 61
         },
         "status" : "passed",
         "steps" : [ ],
@@ -265,18 +265,18 @@
           "value" : "('css selector', '#days')"
         }, {
           "name" : "option_text",
-          "value" : "'25'"
+          "value" : "'18'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Select option with value: 'December'",
+        "name" : "Select option with value: 'November'",
         "time" : {
-          "start" : 1705176874242,
-          "stop" : 1705176874310,
-          "duration" : 68
+          "start" : 1705492250183,
+          "stop" : 1705492250241,
+          "duration" : 58
         },
         "status" : "passed",
         "steps" : [ ],
@@ -286,18 +286,18 @@
           "value" : "('css selector', '#months')"
         }, {
           "name" : "option_text",
-          "value" : "'December'"
+          "value" : "'November'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Select option with value: '1997'",
+        "name" : "Select option with value: '2006'",
         "time" : {
-          "start" : 1705176874310,
-          "stop" : 1705176874367,
-          "duration" : 57
+          "start" : 1705492250241,
+          "stop" : 1705492250299,
+          "duration" : 58
         },
         "status" : "passed",
         "steps" : [ ],
@@ -307,7 +307,7 @@
           "value" : "('css selector', '#years')"
         }, {
           "name" : "option_text",
-          "value" : "'1997'"
+          "value" : "'2006'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -315,11 +315,11 @@
         "hasContent" : true
       } ],
       "attachments" : [ {
-        "uid" : "d005f5b1ed0bf447",
+        "uid" : "59860d1070bb78aa",
         "name" : "Filled account information section form",
-        "source" : "d005f5b1ed0bf447.png",
+        "source" : "59860d1070bb78aa.png",
         "type" : "image/png",
-        "size" : 62328
+        "size" : 296970
       } ],
       "parameters" : [ ],
       "attachmentsCount" : 1,
@@ -329,16 +329,16 @@
     }, {
       "name" : "Fill 'Address Information' section",
       "time" : {
-        "start" : 1705176874604,
-        "stop" : 1705176875553,
-        "duration" : 949
+        "start" : 1705492250609,
+        "stop" : 1705492251630,
+        "duration" : 1021
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Fill field with value: 'Ellen'",
+        "name" : "Fill field with value: 'David'",
         "time" : {
-          "start" : 1705176874604,
-          "stop" : 1705176874675,
+          "start" : 1705492250609,
+          "stop" : 1705492250680,
           "duration" : 71
         },
         "status" : "passed",
@@ -349,18 +349,18 @@
           "value" : "('css selector', '#first_name')"
         }, {
           "name" : "value",
-          "value" : "'Ellen'"
+          "value" : "'David'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: 'Jimenez'",
+        "name" : "Fill field with value: 'French'",
         "time" : {
-          "start" : 1705176874675,
-          "stop" : 1705176874748,
-          "duration" : 73
+          "start" : 1705492250680,
+          "stop" : 1705492250750,
+          "duration" : 70
         },
         "status" : "passed",
         "steps" : [ ],
@@ -370,18 +370,18 @@
           "value" : "('css selector', '#last_name')"
         }, {
           "name" : "value",
-          "value" : "'Jimenez'"
+          "value" : "'French'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: 'Alvarez, Vega and Pierce'",
+        "name" : "Fill field with value: 'Lewis, Vaughn and Lang'",
         "time" : {
-          "start" : 1705176874748,
-          "stop" : 1705176874840,
-          "duration" : 92
+          "start" : 1705492250750,
+          "stop" : 1705492250838,
+          "duration" : 88
         },
         "status" : "passed",
         "steps" : [ ],
@@ -391,18 +391,18 @@
           "value" : "('css selector', '#company')"
         }, {
           "name" : "value",
-          "value" : "'Alvarez, Vega and Pierce'"
+          "value" : "'Lewis, Vaughn and Lang'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: '990 Trevor Mission Suite 205'",
+        "name" : "Fill field with value: '23081 Hobbs Island Suite 262'",
         "time" : {
-          "start" : 1705176874841,
-          "stop" : 1705176874935,
-          "duration" : 94
+          "start" : 1705492250838,
+          "stop" : 1705492250933,
+          "duration" : 95
         },
         "status" : "passed",
         "steps" : [ ],
@@ -412,18 +412,18 @@
           "value" : "('css selector', '#address1')"
         }, {
           "name" : "value",
-          "value" : "'990 Trevor Mission Suite 205'"
+          "value" : "'23081 Hobbs Island Suite 262'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: 'Apt. 177'",
+        "name" : "Fill field with value: 'Suite 670'",
         "time" : {
-          "start" : 1705176874936,
-          "stop" : 1705176875015,
-          "duration" : 79
+          "start" : 1705492250933,
+          "stop" : 1705492251009,
+          "duration" : 76
         },
         "status" : "passed",
         "steps" : [ ],
@@ -433,7 +433,7 @@
           "value" : "('css selector', '#address2')"
         }, {
           "name" : "value",
-          "value" : "'Apt. 177'"
+          "value" : "'Suite 670'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -442,9 +442,9 @@
       }, {
         "name" : "Select option with value: 'Canada'",
         "time" : {
-          "start" : 1705176875015,
-          "stop" : 1705176875077,
-          "duration" : 62
+          "start" : 1705492251009,
+          "stop" : 1705492251069,
+          "duration" : 60
         },
         "status" : "passed",
         "steps" : [ ],
@@ -461,11 +461,11 @@
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: 'Mississippi'",
+        "name" : "Fill field with value: 'Delaware'",
         "time" : {
-          "start" : 1705176875077,
-          "stop" : 1705176875159,
-          "duration" : 82
+          "start" : 1705492251069,
+          "stop" : 1705492251146,
+          "duration" : 77
         },
         "status" : "passed",
         "steps" : [ ],
@@ -475,18 +475,18 @@
           "value" : "('css selector', '#state')"
         }, {
           "name" : "value",
-          "value" : "'Mississippi'"
+          "value" : "'Delaware'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: 'Davidberg'",
+        "name" : "Fill field with value: 'West Alexandrastad'",
         "time" : {
-          "start" : 1705176875159,
-          "stop" : 1705176875236,
-          "duration" : 77
+          "start" : 1705492251146,
+          "stop" : 1705492251228,
+          "duration" : 82
         },
         "status" : "passed",
         "steps" : [ ],
@@ -496,18 +496,18 @@
           "value" : "('css selector', '#city')"
         }, {
           "name" : "value",
-          "value" : "'Davidberg'"
+          "value" : "'West Alexandrastad'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: '64329'",
+        "name" : "Fill field with value: '52294'",
         "time" : {
-          "start" : 1705176875236,
-          "stop" : 1705176875311,
-          "duration" : 75
+          "start" : 1705492251228,
+          "stop" : 1705492251302,
+          "duration" : 74
         },
         "status" : "passed",
         "steps" : [ ],
@@ -517,18 +517,18 @@
           "value" : "('css selector', '#zipcode')"
         }, {
           "name" : "value",
-          "value" : "'64329'"
+          "value" : "'52294'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "stepsCount" : 0,
         "hasContent" : true
       }, {
-        "name" : "Fill field with value: '502-531-9114x3110'",
+        "name" : "Fill field with value: '(319)360-3454x12509'",
         "time" : {
-          "start" : 1705176875311,
-          "stop" : 1705176875395,
-          "duration" : 84
+          "start" : 1705492251302,
+          "stop" : 1705492251405,
+          "duration" : 103
         },
         "status" : "passed",
         "steps" : [ ],
@@ -538,7 +538,7 @@
           "value" : "('css selector', '#mobile_number')"
         }, {
           "name" : "value",
-          "value" : "'502-531-9114x3110'"
+          "value" : "'(319)360-3454x12509'"
         } ],
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
@@ -546,11 +546,11 @@
         "hasContent" : true
       } ],
       "attachments" : [ {
-        "uid" : "7da8f9c239b428",
+        "uid" : "640b6eae6b1368c6",
         "name" : "Filled addres section form",
-        "source" : "7da8f9c239b428.png",
+        "source" : "640b6eae6b1368c6.png",
         "type" : "image/png",
-        "size" : 41290
+        "size" : 339327
       } ],
       "parameters" : [ ],
       "attachmentsCount" : 1,
@@ -560,9 +560,9 @@
     }, {
       "name" : "Click create account button",
       "time" : {
-        "start" : 1705176875554,
-        "stop" : 1705176876267,
-        "duration" : 713
+        "start" : 1705492251630,
+        "stop" : 1705492252280,
+        "duration" : 650
       },
       "status" : "passed",
       "steps" : [ ],
@@ -575,9 +575,9 @@
     }, {
       "name" : "Page https://automationexercise.com/account_created is opened",
       "time" : {
-        "start" : 1705176876267,
-        "stop" : 1705176876270,
-        "duration" : 3
+        "start" : 1705492252280,
+        "stop" : 1705492252282,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -590,24 +590,30 @@
     }, {
       "name" : "User creation message visible",
       "time" : {
-        "start" : 1705176876270,
-        "stop" : 1705176876286,
-        "duration" : 16
+        "start" : 1705492252282,
+        "stop" : 1705492252452,
+        "duration" : 170
       },
       "status" : "passed",
       "steps" : [ ],
-      "attachments" : [ ],
+      "attachments" : [ {
+        "uid" : "ad32206d11ea2b2b",
+        "name" : "User created",
+        "source" : "ad32206d11ea2b2b.png",
+        "type" : "image/png",
+        "size" : 70093
+      } ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
+      "attachmentsCount" : 1,
       "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : true
     }, {
       "name" : "Click continue button",
       "time" : {
-        "start" : 1705176876286,
-        "stop" : 1705176877721,
-        "duration" : 1435
+        "start" : 1705492252452,
+        "stop" : 1705492253301,
+        "duration" : 849
       },
       "status" : "passed",
       "steps" : [ ],
@@ -620,9 +626,9 @@
     }, {
       "name" : "Page https://automationexercise.com/ is opened",
       "time" : {
-        "start" : 1705176877722,
-        "stop" : 1705176877724,
-        "duration" : 2
+        "start" : 1705492253302,
+        "stop" : 1705492253305,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -635,9 +641,9 @@
     }, {
       "name" : "User name header visible",
       "time" : {
-        "start" : 1705176877724,
-        "stop" : 1705176877773,
-        "duration" : 49
+        "start" : 1705492253305,
+        "stop" : 1705492253362,
+        "duration" : 57
       },
       "status" : "passed",
       "steps" : [ ],
@@ -648,11 +654,41 @@
       "stepsCount" : 0,
       "hasContent" : false
     }, {
+      "name" : "Verify user status text",
+      "time" : {
+        "start" : 1705492253362,
+        "stop" : 1705492253393,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify user status text is correct for user Scott Ross",
+        "time" : {
+          "start" : 1705492253393,
+          "stop" : 1705492253393,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
       "name" : "Click delete account header button",
       "time" : {
-        "start" : 1705176877773,
-        "stop" : 1705176878322,
-        "duration" : 549
+        "start" : 1705492253393,
+        "stop" : 1705492253905,
+        "duration" : 512
       },
       "status" : "passed",
       "steps" : [ ],
@@ -665,9 +701,9 @@
     }, {
       "name" : "Page https://automationexercise.com/delete_account is opened",
       "time" : {
-        "start" : 1705176878322,
-        "stop" : 1705176878324,
-        "duration" : 2
+        "start" : 1705492253905,
+        "stop" : 1705492254000,
+        "duration" : 95
       },
       "status" : "passed",
       "steps" : [ ],
@@ -680,24 +716,30 @@
     }, {
       "name" : "User deletion message visible",
       "time" : {
-        "start" : 1705176878324,
-        "stop" : 1705176878341,
-        "duration" : 17
+        "start" : 1705492254000,
+        "stop" : 1705492254212,
+        "duration" : 212
       },
       "status" : "passed",
       "steps" : [ ],
-      "attachments" : [ ],
+      "attachments" : [ {
+        "uid" : "59a85eb22f00b667",
+        "name" : "User deleted",
+        "source" : "59a85eb22f00b667.png",
+        "type" : "image/png",
+        "size" : 70777
+      } ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
+      "attachmentsCount" : 1,
       "shouldDisplayMessage" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "hasContent" : true
     }, {
       "name" : "Click continue button",
       "time" : {
-        "start" : 1705176878341,
-        "stop" : 1705176879185,
-        "duration" : 844
+        "start" : 1705492254212,
+        "stop" : 1705492255143,
+        "duration" : 931
       },
       "status" : "passed",
       "steps" : [ ],
@@ -710,8 +752,8 @@
     }, {
       "name" : "Page https://automationexercise.com/ is opened",
       "time" : {
-        "start" : 1705176879185,
-        "stop" : 1705176879188,
+        "start" : 1705492255143,
+        "stop" : 1705492255146,
         "duration" : 3
       },
       "status" : "passed",
@@ -725,17 +767,17 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 2,
+    "attachmentsCount" : 4,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 37,
+    "stepsCount" : 39,
     "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1705176879188,
-      "stop" : 1705176879302,
-      "duration" : 114
+      "start" : 1705492255147,
+      "stop" : 1705492255267,
+      "duration" : 120
     },
     "status" : "passed",
     "steps" : [ ],
@@ -747,6 +789,9 @@
     "hasContent" : false
   } ],
   "labels" : [ {
+    "name" : "story",
+    "value" : "User registration"
+  }, {
     "name" : "tag",
     "value" : "TestCaseID: 1"
   }, {
@@ -755,9 +800,6 @@
   }, {
     "name" : "severity",
     "value" : "critical"
-  }, {
-    "name" : "story",
-    "value" : "User registration"
   }, {
     "name" : "parentSuite",
     "value" : "tests"
@@ -769,7 +811,7 @@
     "value" : "TestRegistrationFeature"
   }, {
     "name" : "host",
-    "value" : "c68dc5d6a469"
+    "value" : "67784a4c7c50"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -794,8 +836,27 @@
     "severity" : "critical",
     "retries" : [ ],
     "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "37973afe767c07ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176871333,
+          "stop" : 1705176879188,
+          "duration" : 7855
+        }
+      } ]
+    },
     "tags" : [ "TestCaseID: 1" ]
   },
-  "source" : "37973afe767c07ba.json",
+  "source" : "68f3e3946bd3e515.json",
   "parameterValues" : [ ]
 }
