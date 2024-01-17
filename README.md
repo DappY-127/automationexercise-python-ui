@@ -13,36 +13,36 @@ The basic structure for test implementation has been written.
 
 ### User Management:
    - User Authentication:
-     - [x] User Registration (Test Case 1, Test Case 5) - Developed
+     - [x] User Registration (Test Case 1, Test Case 5)
      - [ ] User Login (Test Case 2, Test Case 3) - In Progress
      - [ ] User Logout (Test Case 4) - In Progress
 
 ### Customer Support:
-   - [x] Contact Us Form (Test Case 6) -  Developed
+   - [x] Contact Us Form (Test Case 6)
 
 ### Interface & Navigation:
-   - [x] Verify Test Cases Page (Test Case 7) - Developed
+   - [x] Verify Test Cases Page (Test Case 7)
    - Scroll Functionality:
-     - [x] Verify Scroll Up & Down Functionality with 'Arrow' Button (Test Case 25) - Developed
-     - [x] Verify Scroll Up & Down Functionality without 'Arrow' Button (Test Case 26) - Developed
+     - [x] Verify Scroll Up & Down Functionality with 'Arrow' Button (Test Case 25)
+     - [x] Verify Scroll Up & Down Functionality without 'Arrow' Button (Test Case 26)
 
 ### Product Management:
    - Product Display & Information:
-     - [ ] Verify All Products and Product Detail Page (Test Case 8) - In Progress
+     - [x] Verify All Products and Product Detail Page (Test Case 8)
      - [ ] View Category Products (Test Case 18) - In Progress
      - [ ] View & Cart Brand Products (Test Case 19) - In Progress
      - [ ] Search Product (Test Case 9) - In Progress
    - Cart & Wishlist:
-     - [ ] Add Products in Cart (Test Case 12) - Not Developed
+     - [x] Add Products in Cart (Test Case 12)
      - [ ] Verify Product Quantity in Cart (Test Case 13) - Not Developed
-     - [ ] Remove Products From Cart (Test Case 17) - Not Developed
+     - [x] Remove Products From Cart (Test Case 17)
      - [ ] Add Review on Product (Test Case 21) - Not Developed
      - [ ] Add to Cart from Recommended Items (Test Case 22) - Not Developed
 
 ### Shopping & Checkout:
    - Subscription Handling:
-     - [x] Verify Subscription in Home Page (Test Case 10) - Developed
-     - [x] Verify Subscription in Cart Page (Test Case 11) - Developed
+     - [x] Verify Subscription in Home Page (Test Case 10)
+     - [x] Verify Subscription in Cart Page (Test Case 11)
    - Checkout Process:
      - [ ] Place Order: Register While Checkout (Test Case 14) - Not Developed
      - [ ] Place Order: Register Before Checkout (Test Case 15) - Not Developed
