@@ -50,9 +50,9 @@ class ProductsPage(BasePage):
         self.is_added_modal_visible()
         self.wait.until(EC.element_to_be_clickable(self.MODAL_VIEW_CART_BTTN)).click()    
 
-    @allure.step("Enter product name in search input and click search button")
-    def fill_product_search_and_click_search_bttn(self):
-        self.fill_field(self.PRODUCTS_SEARCH_FIELD, "Dress")
+    @allure.step("Enter {search_data} in search input and click search button")
+    def fill_product_search_and_click_search_bttn(self, search_data):
+        self.fill_field(self.PRODUCTS_SEARCH_FIELD, search_data)
         self.wait.until(EC.visibility_of_element_located(self.SUBMIT_SEARCH_BTTN))       
         self.wait.until(EC.element_to_be_clickable(self.SUBMIT_SEARCH_BTTN)).click()  
         self.make_screenshot("Search result")
