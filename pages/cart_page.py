@@ -50,7 +50,16 @@ class CartPage(BasePage):
     def is_cart_empty(self):
         is_visible = self.wait.until(EC.visibility_of_element_located(self.EMPTY_CART))
         allure.attach(f"Is Cart Empty: {is_visible}", name="Cart Empty Check")
+        self.make_screenshot("Empty Cart")
 
+    @allure.step("Check firs cart product quantity")
+    def check_cart_first_product_quantity(self, quantity):
+        actual_quantity = self.get_cart_product_quantities()
+        actual_quantity = int(actual_quantity[0])
+        with allure.step(f"Verify quantity is correct for first cart product"):
+            assert actual_quantity == quantity, f"Expected: {quantity}, Actual: {actual_quantity}"
+        self.make_screenshot("Product quantity")
+        
     @allure.step("Products at cart presence")
     def is_cart_products_present(self, *product_names_to_check):
         self.is_cart_not_empty()
@@ -71,6 +80,7 @@ class CartPage(BasePage):
         self.is_cart_not_empty()
         delete_button_locator = ("xpath", "//a[@class='cart_quantity_delete'][1]")
         delete_button = self.wait.until(EC.element_to_be_clickable(delete_button_locator))
+        delete_button.click()
 
         product_name = self.get_cart_product_names()[0]
         delete_button.click()
