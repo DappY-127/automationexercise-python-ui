@@ -11,6 +11,8 @@ class ProductsPage(BasePage):
     LEFT_SIDEBAR = ("css selector", ".left-sidebar")
     CATEGORY_SIDEBAR = ("css selector", ".left-sidebar #accordian")
     BRANDS_SIDEBAR = ("css selector", ".left-sidebar .brands-name")
+    BRANDS_SIDEBAR_CATEGORIES = ("css selector", ".left-sidebar .brands-name li")
+    PRODUCTS_TEXT = ("css selector", ".features_items h2.text-center")
     ALL_PRODUCTS = ("css selector", ".features_items")
     ALL_PRODUCT_CARDS = ("xpath", "//div[@class='single-products']")
     PRODUCTS_SEARCH_FIELD = ("css selector", "#search_product")
@@ -74,6 +76,47 @@ class ProductsPage(BasePage):
     def click_view_product_bttn_by_id(self, product_id):
         view_bttn_locator = ("xpath", f"//div[@class='choose']//a[@href='/product_details/{product_id}']")
         self.scroll_into_view(view_bttn_locator)
-        self.wait.until(EC.element_to_be_clickable(view_bttn_locator)).click() 
+        self.wait.until(EC.element_to_be_clickable(view_bttn_locator)).click()
+
+    @allure.step("Click '{product_brand}' product brand")
+    def click_product_sidebar_category(self, product_brand):
+        """
+        Clicks on the specified product brand in the left sidebar category.
+        Valid Brands:
+        - Polo
+        - H&M
+        - Madame
+        - Mast & Harbour
+        - Babyhug
+        - Allen Solly Junior
+        - Kookie Kids
+        - Biba
+        """
+        valid_brands = ["Polo", "H&M", "Madame", "Mast & Harbour", "Babyhug", "Allen Solly Junior", "Kookie Kids", "Biba"]
+
+        if product_brand not in valid_brands:
+            raise ValueError(f"Invalid product brand. Valid brands are: {', '.join(valid_brands)}")
+
+        product_category = ('css selector', f'.left-sidebar .brands-name a[href="/brand_products/{product_brand}"]')
+        self.scroll_into_view(product_category)
+        self.wait.until(EC.element_to_be_clickable(product_category)).click()
+
+    @allure.step("Verify '{product_brand}' product brand category is opened")
+    def verify_brand_page_and_brand_products(self, product_brand):
+        expected_url = f'https://automationexercise.com/brand_products/{product_brand}'
+        expected_text = f"Brand - {product_brand} Products"
+
+        # # Verify the page URL
+        # actual_url = self.browser.current_url
+        # assert actual_url == expected_url, f"Expected URL: {expected_url}, Actual URL: {actual_url}"
+
+        # Verify the presence of the brand text in the PRODUCTS_TEXT selector
+        products_text = self.wait.until(EC.visibility_of_element_located(self.PRODUCTS_TEXT))
+        products_text = products_text.text
+        expected_text_uppercase = expected_text.upper()
+        actual_text_uppercase = products_text.upper()
+        # products_text = self.get_element_text(self.PRODUCTS_TEXT)
+        assert expected_text_uppercase  in actual_text_uppercase, f"Expected '{expected_text}' in PRODUCTS_TEXT, but found '{products_text}'"
+        self.make_screenshot("Category products")
 
               
