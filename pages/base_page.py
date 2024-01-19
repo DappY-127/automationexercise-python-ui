@@ -94,4 +94,13 @@ class BasePage(HeaderFooterElements):
     def hover_over_element(self, element_locator):
         element = self.wait.until(EC.presence_of_element_located(element_locator))
         actions = ActionChains(self.browser)
-        actions.move_to_element(element).perform()                 
+        actions.move_to_element(element).perform() 
+
+    # Helper methods
+    def get_elements_text(self, locator):
+        elements = self.wait.until(EC.presence_of_all_elements_located(locator))
+        return [element.text for element in elements]
+
+    def get_element_text(self, locator):
+        element = self.wait.until(EC.presence_of_element_located(locator))
+        return element.text                   

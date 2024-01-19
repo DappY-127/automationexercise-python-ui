@@ -85,12 +85,3 @@ class CartPage(BasePage):
         product_name = self.get_cart_product_names()[0]
         delete_button.click()
         allure.attach(f"Deleted Product: {product_name}", name="Deleted Product")
-
-    # Helper methods
-    def get_elements_text(self, locator):
-        elements = self.wait.until(EC.presence_of_all_elements_located(locator))
-        return [element.text for element in elements]
-
-    def get_element_text(self, locator):
-        element = self.wait.until(EC.presence_of_element_located(locator))
-        return element.text
