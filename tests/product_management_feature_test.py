@@ -22,27 +22,24 @@ class TestProductManagementFeature(BaseTest):
         self.product_details_page.is_header_visible()
         self.product_details_page.is_product_details_visible()
 
-    # @allure.title("View Category Products")
-    # @allure.severity(allure.severity_level.NORMAL)
-    # @allure.story("Product Display & Information")
-    # @allure.tag('TestCaseID: 18')
-    # def test_(self):
-    #     # self.home_page.open()
-    #     pass
-
-    @allure.title("View & Cart Brand Products")
+    @allure.title("View Category Products")
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story("Product Display & Information")
-    @allure.tag('TestCaseID: 19')
-    @pytest.mark.skip()
-    def test_brand_products_presence(self):
+    @allure.tag('TestCaseID: 18')
+    @pytest.mark.parametrize("category, subcategory", [("Women", "Dress"), ("Women", "Tops"), ("Women", "Saree"),
+                                                    ("Men", "Tshirts"), ("Men", "Jeans"),
+                                                    ("Kids", "Dress"), ("Kids", "Tops & Shirts")])
+    def test_category_products_presence_parametrised(self, category, subcategory):
         self.home_page.open()
+        self.home_page.is_opened()
         self.home_page.click_products_button()
         self.products_page.is_header_visible()
         self.products_page.is_opened()
         self.products_page.is_products_visible()
-        self.products_page.click_product_sidebar_category('Babyhug')
-        self.products_page.verify_brand_page_and_brand_products('Babyhug')
+        self.products_page.click_category_and_subcategory(category, subcategory)
+        self.products_page.is_header_visible()
+        self.products_page.is_products_visible()
+        self.products_page.verify_category_and_subcategory_products(category, subcategory)
 
     valid_brands = ["Polo", "H&M", "Madame", "Mast & Harbour", "Babyhug", "Allen Solly Junior", "Kookie Kids", "Biba"]
 
@@ -50,15 +47,16 @@ class TestProductManagementFeature(BaseTest):
     @allure.severity(allure.severity_level.NORMAL)
     @allure.story("Product Display & Information")
     @allure.tag('TestCaseID: 19')
-    # @pytest.mark.skip()
     @pytest.mark.parametrize("brand", valid_brands)
     def test_brand_products_presence_parametrised(self, brand):
         self.home_page.open()
+        self.home_page.is_opened()
         self.home_page.click_products_button()
         self.products_page.is_header_visible()
         self.products_page.is_opened()
         self.products_page.is_products_visible()
         self.products_page.click_product_sidebar_category(brand)
+        self.products_page.is_header_visible()
         self.products_page.verify_brand_page_and_brand_products(brand)        
 
     @allure.title("Search Product")
@@ -67,6 +65,7 @@ class TestProductManagementFeature(BaseTest):
     @allure.tag('TestCaseID: 9')
     def test_product_search(self):
         self.home_page.open()
+        self.home_page.is_opened()
         self.home_page.click_products_button()
         self.products_page.is_opened()
         self.products_page.is_header_visible()

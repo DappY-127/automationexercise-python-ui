@@ -119,4 +119,24 @@ class ProductsPage(BasePage):
         assert expected_text_uppercase  in actual_text_uppercase, f"Expected '{expected_text}' in PRODUCTS_TEXT, but found '{products_text}'"
         self.make_screenshot("Category products")
 
+    @allure.step("Click '{category} -> {subcategory}' category and subcategory")
+    def click_category_and_subcategory(self, category, subcategory):
+        category_locator = ('css selector', f'a[href="#{category}"]')
+        subcategory_locator = ('xpath', f'//div[@id="{category}"]//a[contains(text(), "{subcategory}")]')
+
+        self.wait.until(EC.element_to_be_clickable(category_locator)).click()
+        self.wait.until(EC.element_to_be_clickable(subcategory_locator)).click()
+
+    @allure.step("Verify '{category} -> {subcategory}' category and subcategory are opened")
+    def verify_category_and_subcategory_products(self, category, subcategory):
+        expected_text = f"{category} - {subcategory} Products"
+
+        # Verify the presence of the category and subcategory text in the PRODUCTS_TEXT selector
+        products_text = self.wait.until(EC.visibility_of_element_located(self.PRODUCTS_TEXT))
+        products_text = products_text.text
+        expected_text_uppercase = expected_text.upper()
+        actual_text_uppercase = products_text.upper()
+        assert expected_text_uppercase in actual_text_uppercase, f"Expected '{expected_text}' in PRODUCTS_TEXT, but found '{products_text}'"
+        self.make_screenshot("Category and subcategory products")        
+
               
