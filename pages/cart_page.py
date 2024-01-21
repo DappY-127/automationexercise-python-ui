@@ -44,6 +44,7 @@ class CartPage(BasePage):
     def is_cart_not_empty(self):
         is_empty = self.wait.until(EC.invisibility_of_element_located(self.EMPTY_CART))
         allure.attach(f"Is Cart Empty: {not is_empty}", name="Cart Empty Check")
+        self.make_screenshot("Cart Product")
         return not is_empty
 
     @allure.step("Check if the cart is empty")

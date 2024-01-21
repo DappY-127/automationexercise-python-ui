@@ -18,6 +18,7 @@ class ProductDetailsPage(BasePage):
     REVIEW_EMAIL_FIELD = ("css selector", "#email")
     REVIEW_FIELD = ("css selector", "#review")
     SUBMIT_REVIEW_BTTN = ("css selector", "#button-review")
+    SUCCESS_REVIEW_MSSG = ("css selector", "#review-section .alert-success")
 # this locators same as in products page, need to refactor later!!!
     PRODUCT_ADDED_MODAL = ("css selector", "#cartModal .modal-content")
     MODAL_VIEW_CART_BTTN = ("css selector", "#cartModal [href='/view_cart']")
@@ -63,4 +64,26 @@ class ProductDetailsPage(BasePage):
     @allure.step("Click 'View Cart' button")
     def click_view_cart_bttn(self):
         self.is_added_modal_visible()
-        self.wait.until(EC.element_to_be_clickable(self.MODAL_VIEW_CART_BTTN)).click()     
+        self.wait.until(EC.element_to_be_clickable(self.MODAL_VIEW_CART_BTTN)).click()
+        
+    @allure.step("Add product review")
+    def add_product_review(self):
+        self.scroll_into_view(self.SUBMIT_REVIEW_BTTN)
+        self.wait.until(EC.visibility_of_element_located(self.REVIEW_NAME_FIELD))
+        self.wait.until(EC.visibility_of_element_located(self.REVIEW_EMAIL_FIELD))
+        self.wait.until(EC.visibility_of_element_located(self.REVIEW_FIELD))
+        self.wait.until(EC.visibility_of_element_located(self.SUBMIT_REVIEW_BTTN))
+        self.fill_field(self.REVIEW_NAME_FIELD, self.fake.name())
+        self.fill_field(self.REVIEW_EMAIL_FIELD, self.fake.email())
+        self.fill_field(self.REVIEW_FIELD, self.fake.paragraph()) 
+        self.make_screenshot('Filled review')
+        self.wait.until(EC.element_to_be_clickable(self.SUBMIT_REVIEW_BTTN)).click()
+
+    @allure.step("Success review message visible")
+    def is_success_mssg_visible(self):
+        error_msg_text = self.wait.until(EC.visibility_of_element_located(self.SUCCESS_REVIEW_MSSG)).text
+        expected_error_msg = "Thank you for your review."
+
+        with allure.step(f"Verify success message text is correct"):
+            assert expected_error_msg == error_msg_text, f"Expected: {expected_error_msg}, Actual: {error_msg_text}"     
+        self.make_screenshot('Success review message')         

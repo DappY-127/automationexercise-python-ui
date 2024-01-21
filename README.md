@@ -31,13 +31,13 @@ The basic structure for test implementation has been written.
      - [x] Verify All Products and Product Detail Page (Test Case 8)
      - [ ] View Category Products (Test Case 18) - In Progress
      - [ ] View & Cart Brand Products (Test Case 19) - In Progress
-     - [ ] Search Product (Test Case 9) - In Progress
+     - [x] Search Product (Test Case 9) 
    - Cart & Wishlist:
      - [x] Add Products in Cart (Test Case 12)
-     - [ ] Verify Product Quantity in Cart (Test Case 13) - Not Developed
+     - [x] Verify Product Quantity in Cart (Test Case 13)
      - [x] Remove Products From Cart (Test Case 17)
-     - [ ] Add Review on Product (Test Case 21) - Not Developed
-     - [ ] Add to Cart from Recommended Items (Test Case 22) - Not Developed
+     - [x] Add Review on Product (Test Case 21)
+     - [x] Add to Cart from Recommended Items (Test Case 22)
 
 ### Shopping & Checkout:
    - Subscription Handling:
