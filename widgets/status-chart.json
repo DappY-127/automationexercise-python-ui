@@ -1,131 +1,171 @@
 [ {
-  "uid" : "a741f46fa1eaa876",
+  "uid" : "f3110f8549a4931e",
   "name" : "Verify Subscription in cart page",
   "time" : {
-    "start" : 1705492243536,
-    "stop" : 1705492245376,
-    "duration" : 1840
+    "start" : 1705862628221,
+    "stop" : 1705862631018,
+    "duration" : 2797
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "beee68078bd849",
-  "name" : "Login User with incorrect email and password",
-  "time" : {
-    "start" : 1705492259677,
-    "stop" : 1705492261756,
-    "duration" : 2079
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "68f3e3946bd3e515",
-  "name" : "Register User",
-  "time" : {
-    "start" : 1705492246556,
-    "stop" : 1705492255146,
-    "duration" : 8590
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "415fe5ed5a2f24e5",
-  "name" : "Register User with existing email",
-  "time" : {
-    "start" : 1705492256329,
-    "stop" : 1705492258462,
-    "duration" : 2133
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "46698d66e22d67ae",
+  "uid" : "845587169045ddc8",
   "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
   "time" : {
-    "start" : 1705492231640,
-    "stop" : 1705492233314,
-    "duration" : 1674
+    "start" : 1705862613645,
+    "stop" : 1705862616018,
+    "duration" : 2373
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "98f6ce0642d1eb19",
-  "name" : "Verify Subscription in home page",
+  "uid" : "82ac191eeac5fe55",
+  "name" : "Verify All Products and Product Detail Page",
   "time" : {
-    "start" : 1705492240984,
-    "stop" : 1705492242358,
-    "duration" : 1374
+    "start" : 1705862537141,
+    "stop" : 1705862553916,
+    "duration" : 16775
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1ccd701d0ef9efa9",
+  "name" : "Verify Test Cases Page",
+  "time" : {
+    "start" : 1705862620594,
+    "stop" : 1705862623730,
+    "duration" : 3136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "497d790d5145977c",
+  "name" : "Add to cart from Recommended items",
+  "time" : {
+    "start" : 1705862608551,
+    "stop" : 1705862612447,
+    "duration" : 3896
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "3f910d53c5e3a1c9",
+  "uid" : "84677b21a93b34ef",
+  "name" : "Verify Subscription in home page",
+  "time" : {
+    "start" : 1705862624942,
+    "stop" : 1705862627017,
+    "duration" : 2075
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "20c58a2a9d502dfd",
+  "name" : "Register User",
+  "time" : {
+    "start" : 1705862632196,
+    "stop" : 1705862640539,
+    "duration" : 8343
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c11842fb3f9d233f",
+  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
+  "time" : {
+    "start" : 1705862617193,
+    "stop" : 1705862619395,
+    "duration" : 2202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c815c0f1b160af7c",
+  "name" : "Login User with incorrect email and password",
+  "time" : {
+    "start" : 1705862646796,
+    "stop" : 1705862649708,
+    "duration" : 2912
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "487998f73502a2ef",
   "name" : "Remove Products From Cart",
   "time" : {
-    "start" : 1705492216821,
-    "stop" : 1705492223802,
-    "duration" : 6981
+    "start" : 1705862585712,
+    "stop" : 1705862594526,
+    "duration" : 8814
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d250eb85379c267",
+  "name" : "Search Product",
+  "time" : {
+    "start" : 1705862555154,
+    "stop" : 1705862560552,
+    "duration" : 5398
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a81d9aacbe5e9c4b",
+  "name" : "Contact Us Form",
+  "time" : {
+    "start" : 1705862530161,
+    "stop" : 1705862535902,
+    "duration" : 5741
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "fcc8c7500007d2c0",
+  "name" : "Remove All Products From Cart",
+  "time" : {
+    "start" : 1705862595780,
+    "stop" : 1705862602546,
+    "duration" : 6766
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "42aafb4bf009c428",
+  "name" : "Verify Product Quantity in Cart",
+  "time" : {
+    "start" : 1705862579929,
+    "stop" : 1705862584526,
+    "duration" : 4597
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a6907493780fe10b",
+  "name" : "Add Products in Cart",
+  "time" : {
+    "start" : 1705862561748,
+    "stop" : 1705862578740,
+    "duration" : 16992
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "c89888751992dc75",
-  "name" : "Remove All Products From Cart",
+  "uid" : "1a19dac39c895d25",
+  "name" : "Add Review on Product",
   "time" : {
-    "start" : 1705492225087,
-    "stop" : 1705492230442,
-    "duration" : 5355
+    "start" : 1705862603741,
+    "stop" : 1705862607383,
+    "duration" : 3642
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "93ee05519ef7b317",
-  "name" : "Verify All Products and Product Detail Page",
+  "uid" : "3b692f4e67c1705d",
+  "name" : "Register User with existing email",
   "time" : {
-    "start" : 1705492205123,
-    "stop" : 1705492209027,
-    "duration" : 3904
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "aa2b6b208cb7890",
-  "name" : "Contact Us Form",
-  "time" : {
-    "start" : 1705492200593,
-    "stop" : 1705492203882,
-    "duration" : 3289
+    "start" : 1705862641758,
+    "stop" : 1705862645564,
+    "duration" : 3806
   },
   "status" : "passed",
   "severity" : "critical"
-}, {
-  "uid" : "9cadc75c838680a6",
-  "name" : "Add Products in Cart",
-  "time" : {
-    "start" : 1705492210228,
-    "stop" : 1705492215614,
-    "duration" : 5386
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "b906345af02be5fa",
-  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
-  "time" : {
-    "start" : 1705492234506,
-    "stop" : 1705492236253,
-    "duration" : 1747
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "50792a04a76d6a43",
-  "name" : "Verify Test Cases Page",
-  "time" : {
-    "start" : 1705492237492,
-    "stop" : 1705492239765,
-    "duration" : 2273
-  },
-  "status" : "passed",
-  "severity" : "normal"
 } ]
