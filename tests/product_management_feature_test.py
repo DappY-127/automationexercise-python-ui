@@ -1,7 +1,6 @@
 import allure
 import pytest
 from .base_test import BaseTest
-import time
 
 
 @allure.feature("Product Management")

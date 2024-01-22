@@ -41,12 +41,12 @@ class SignupLoginPage(BasePage):
         self.wait.until(EC.element_to_be_clickable(self.SIGNUP_BTTN)).click()
         
     @allure.step("Enter login email")
-    def enter_login(self, login):
-        self.wait.until(EC.element_to_be_clickable(self.LOGIN_EMAIL_ADDRESS_FIELD)).send_keys(login)
+    def enter_login(self):
+        self.fill_field(self.LOGIN_EMAIL_ADDRESS_FIELD, self.data.email)
         
     @allure.step("Enter password")
-    def enter_password(self, password):
-        self.wait.until(EC.element_to_be_clickable(self.LOGIN_PASSWORD_FIELD)).send_keys(password)
+    def enter_password(self):
+        self.fill_field(self.LOGIN_PASSWORD_FIELD, self.data.password)
 
     @allure.step("Click login button")
     def click_login_button(self):

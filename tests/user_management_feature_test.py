@@ -49,13 +49,23 @@ class TestRegistrationFeature(BaseTest):
         self.signup_login_page.click_signup_button()
         self.signup_login_page.is_email_exist_error_visible()
 
-    # @allure.title("Login User with correct email and password")
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.story("User login")
-    # @allure.tag('TestCaseID: 2')
-    # def test_login_with_valid_data(self):
-    #     self.home_page.open()
-    #     self.home_page.click_signup_login_button()
+    @allure.title("Login User with correct email and password")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.story("User login")
+    @allure.tag('TestCaseID: 2')
+    def test_login_with_valid_data(self):
+        self.account_register()
+        self.account_logout()
+
+        self.signup_login_page.is_opened()
+        self.signup_login_page.enter_login()
+        self.signup_login_page.enter_password() 
+        self.signup_login_page.click_login_button()   
+        self.home_page.is_opened()
+        self.home_page.is_user_name_header_visible()
+        self.home_page.is_user_status_correct()  
+
+        self.account_deletion()
 
     @allure.title("Login User with incorrect email and password")
     @allure.severity(allure.severity_level.CRITICAL)
@@ -70,10 +80,15 @@ class TestRegistrationFeature(BaseTest):
         self.signup_login_page.click_login_button()
         self.signup_login_page.is_invalid_email_or_password_error_visible()
 
-#     @allure.title("Logout User")
-#     @allure.severity(allure.severity_level.CRITICAL)
-#     @allure.story("User logout")
-#     @allure.tag('TestCaseID: 4')
-#     def test_logout_user(self):
-#         self.home_page.open()
-#         self.home_page.click_signup_login_button()
+    @allure.title("Logout User")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.story("User logout")
+    @allure.tag('TestCaseID: 4')
+    def test_logout_user(self):
+        self.account_register()
+
+        self.home_page.click_logout_button()
+        self.signup_login_page.is_opened()
+
+        self.account_login()
+        self.account_deletion()

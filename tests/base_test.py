@@ -62,10 +62,17 @@ class BaseTest:
         self.home_page.is_user_status_correct()
 
     def account_login(self):
-        pass        
+        self.signup_login_page.is_opened()
+        self.signup_login_page.enter_login()
+        self.signup_login_page.enter_password() 
+        self.signup_login_page.click_login_button()   
+        self.home_page.is_opened()
+        self.home_page.is_user_name_header_visible()
+        self.home_page.is_user_status_correct()       
 
     def account_logout(self):
-        pass        
+        self.home_page.click_logout_button()
+        self.signup_login_page.is_opened()
 
     def account_deletion(self):
         self.home_page.click_delete_account_button()

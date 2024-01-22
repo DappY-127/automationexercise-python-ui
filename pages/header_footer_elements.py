@@ -29,6 +29,10 @@ class HeaderFooterElements():
     def click_delete_account_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_DELETE_ACC_BTTN)).click()
 
+    @allure.step("Click logout header button")
+    def click_logout_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.HEADER_LOGOUT_BTTN)).click()
+
     @allure.step("Click 'Test Cases' header button")
     def click_testcases_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_TEST_CASE_BTTN)).click()
