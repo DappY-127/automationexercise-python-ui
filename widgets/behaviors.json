@@ -1,19 +1,19 @@
 {
   "total" : 5,
   "items" : [ {
-    "uid" : "c8c9d2bb401e599c2322125d8aa5c4ac",
-    "name" : "Product Management",
+    "uid" : "3e2a355d5946a5d454ef3f6055ec2d1b",
+    "name" : "Registration Functionality",
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     }
   }, {
-    "uid" : "0fdb1f9e7bb9c77df780942b5541f89c",
-    "name" : "Interface & Navigation",
+    "uid" : "c8c9d2bb401e599c2322125d8aa5c4ac",
+    "name" : "Product Management",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -23,8 +23,8 @@
       "total" : 2
     }
   }, {
-    "uid" : "3e2a355d5946a5d454ef3f6055ec2d1b",
-    "name" : "Registration Functionality",
+    "uid" : "0fdb1f9e7bb9c77df780942b5541f89c",
+    "name" : "Interface & Navigation",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
