@@ -12,4 +12,7 @@ class Links:
     CONTACT_US_PAGE = f"{HOST}contact_us"
     ACCOUNT_CREATED_PAGE = f"{HOST}account_created"
     ACCOUNT_DELETED_PAGE = f"{HOST}delete_account"
+    CHECKOUT_PAGE = f"{HOST}checkout"
+    PAYMENT_PAGE = f"{HOST}payment"
+    ORDER_PLACEMENT_PAGE = f"{HOST}payment_done/500"
     # API_TESTING_PAGE = f"{HOST}/"
