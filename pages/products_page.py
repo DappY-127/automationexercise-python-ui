@@ -103,12 +103,7 @@ class ProductsPage(BasePage):
 
     @allure.step("Verify '{product_brand}' product brand category is opened")
     def verify_brand_page_and_brand_products(self, product_brand):
-        expected_url = f'https://automationexercise.com/brand_products/{product_brand}'
         expected_text = f"Brand - {product_brand} Products"
-
-        # # Verify the page URL
-        # actual_url = self.browser.current_url
-        # assert actual_url == expected_url, f"Expected URL: {expected_url}, Actual URL: {actual_url}"
 
         # Verify the presence of the brand text in the PRODUCTS_TEXT selector
         products_text = self.wait.until(EC.visibility_of_element_located(self.PRODUCTS_TEXT))

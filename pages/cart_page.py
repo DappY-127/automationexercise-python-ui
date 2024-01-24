@@ -15,6 +15,9 @@ class CartPage(BasePage):
     CART_PRODUCT_QUANTITY = ("xpath", "//td[contains(@class, 'cart_quantity')]/button")
     CART_TOTAL_PRODUCT_PRICES = ("xpath", "//p[contains(@class, 'cart_total_price')]")
     DELETE_FROM_CART_BTTNS = ("xpath", "a[class='cart_quantity_delete']")
+    CHECKOUT_MODAL = ("css selector", "#checkoutModal .modal-content")
+    MODAL_REGISTER_LOGIN_BTTN = ("css selector", "#checkoutModal [href='/login']")
+    MODAL_CONTINUE_ON_CART_BTTN = ("css selector", "#checkoutModal .btn-success")
     
     @allure.step("Get list of product names in the cart")
     def get_cart_product_names(self):
@@ -86,3 +89,25 @@ class CartPage(BasePage):
         product_name = self.get_cart_product_names()[0]
         delete_button.click()
         allure.attach(f"Deleted Product: {product_name}", name="Deleted Product")
+
+    @allure.step("'Register / Login account to proceed on checkout.' checkout modal pop up visible")
+    def is_checkout_modal_visible(self):
+        self.wait.until(EC.visibility_of_element_located(self.CHECKOUT_MODAL))
+        self.wait.until(EC.visibility_of_element_located(self.MODAL_REGISTER_LOGIN_BTTN))
+        self.wait.until(EC.visibility_of_element_located(self.MODAL_CONTINUE_ON_CART_BTTN))
+        self.wait.until(EC.element_to_be_clickable(self.MODAL_REGISTER_LOGIN_BTTN))
+        self.wait.until(EC.element_to_be_clickable(self.MODAL_CONTINUE_ON_CART_BTTN))
+
+    @allure.step("Click 'Continue On Cart' button")
+    def click_continue_on_cart_bttn(self):
+        self.is_checkout_modal_visible()
+        self.wait.until(EC.element_to_be_clickable(self.MODAL_CONTINUE_ON_CART_BTTN)).click()
+
+    @allure.step("Click 'Register / Login' button")
+    def click_login_register_bttn(self):
+        self.is_checkout_modal_visible()
+        self.wait.until(EC.element_to_be_clickable(self.MODAL_REGISTER_LOGIN_BTTN)).click()   
+    
+    @allure.step("Click 'Proceed To Checkout' button")
+    def click_proceed_to_checkout_bttn(self):
+        self.wait.until(EC.element_to_be_clickable(self.PROCEED_TO_CHECKOUT_BTTN)).click()   

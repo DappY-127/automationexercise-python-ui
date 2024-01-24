@@ -25,7 +25,7 @@ class CheckoutPage(BasePage):
         self.make_screenshot("Delivery Address")
 
     @allure.step("'YOUR BILLING ADDRESS' information block visible")
-    def is_delivery_address_visible(self):
+    def is_billing_address_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.YOUR_BILLING_ADDRESS_LABEL))
         self.make_screenshot("Billing Address")
 
