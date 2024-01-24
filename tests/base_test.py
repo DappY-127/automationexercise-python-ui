@@ -10,6 +10,9 @@ from pages.contact_us_page import ContactUsPage
 from pages.cart_page import CartPage
 from pages.products_page import ProductsPage
 from pages.product_details_page import ProductDetailsPage
+from pages.checkout_page import CheckoutPage
+from pages.payment_page import PaymentPage
+from pages.order_placement_page import OrderPlacementPage
 
 class BaseTest:
 
@@ -25,6 +28,9 @@ class BaseTest:
     cart_page: CartPage
     products_page: ProductsPage
     product_details_page: ProductDetailsPage
+    checkout_page: CheckoutPage
+    payment_page: PaymentPage
+    order_placement_page: OrderPlacementPage
 
     @pytest.fixture(autouse=True)
     def setup(self, request, browser):
@@ -41,6 +47,9 @@ class BaseTest:
         request.cls.cart_page = CartPage(browser)
         request.cls.products_page = ProductsPage(browser)
         request.cls.product_details_page = ProductDetailsPage(browser)
+        request.cls.checkout_page = CheckoutPage(browser)
+        request.cls.payment_page = PaymentPage(browser)
+        request.cls.order_placement_page = OrderPlacementPage(browser)
 
     def account_register(self):
         self.home_page.open()
@@ -91,6 +100,3 @@ class BaseTest:
 #     ContactUsPage,
 #     CartPage,
 # )
-
-
-    # Сюди додати потім реєстрацію/видалення акаунту бо воно майже в кожному тесткейсі буде 
