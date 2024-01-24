@@ -35,11 +35,13 @@ class Data:
             self.birth_day = str(self.fake.random_int(min=1, max=31))
             self.birth_month = self.fake.month_name()
             self.birth_year = str(self.fake.random_int(min=1900, max=2021))
+            self.expiration_year = str(self.fake.random_int(min=1900, max=2021))
+            self.expiration_month = str(self.fake.random_int(min=1, max=12)).zfill(2)
+            self.card_cvc = str(self.fake.random_int(min=1, max=999)).zfill(3)
+            self.credit_card_number = self.fake.credit_card_number(card_type=None)
+            self.credit_card_name = f'{self.first_name} {self.last_name}'
             self._initialized = True
 
     def generate_random_email(self):
         random_number = random.randint(0, 9999)
         return f"testmail{random_number}@mail.com"
-
-    # LOGIN = os.getenv("LOGIN")
-    # PASSWORD = os.getenv("PASSWORD")
