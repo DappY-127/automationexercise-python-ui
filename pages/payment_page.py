@@ -14,6 +14,7 @@ class PaymentPage(BasePage):
     CARD_EXPIRATION_MONTH_FIELD = ("css selector", "[data-qa='expiry-month']")
     CARD_EXPIRATION_YEAR_FIELD = ("css selector", "[data-qa='expiry-year']")
     PAY_AND_CONFIRM_ORDER_BTTN = ("css selector", "#submit[data-qa='pay-button']")
+    SUCCESS_PAYMENT_MSSG = ('css selector', '.alert-success.alert')
 
     @allure.step("Click confirm order button")
     def click_confirm_order_button(self):
@@ -28,12 +29,20 @@ class PaymentPage(BasePage):
         self.fill_field(self.CARD_EXPIRATION_YEAR_FIELD, self.data.expiration_year)
         self.make_screenshot('Filled card information section form')
 
-    @allure.step("Payment page label visible")
+    @allure.step("Payment label visible")
     def is_products_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.PAYMENT_LABEL))
-        self.make_screenshot("Payment Label")    
+        self.make_screenshot("Payment Label")
 
+    @allure.step("Succes payment message visible")
+    def is_succes_payment_mssg_visible(self):
+        succes = self.wait.until(EC.visibility_of_element_located(self.SUCCESS_PAYMENT_MSSG)) 
+        succes = succes.text  
+        expected_msg = "Your order has been placed successfully!"
 
-# validate succes message
+        with allure.step(f"Verify succes message text is correct"):
+            assert expected_msg == succes, f"Expected: {expected_msg}, Actual: {succes}"
+        self.make_screenshot("Success message")       
+
 
 

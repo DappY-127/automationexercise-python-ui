@@ -14,5 +14,5 @@ class Links:
     ACCOUNT_DELETED_PAGE = f"{HOST}delete_account"
     CHECKOUT_PAGE = f"{HOST}checkout"
     PAYMENT_PAGE = f"{HOST}payment"
-    ORDER_PLACEMENT_PAGE = f"{HOST}payment_done/500"
+    # ORDER_PLACEMENT_PAGE = f"{HOST}payment_done"
     # API_TESTING_PAGE = f"{HOST}/"

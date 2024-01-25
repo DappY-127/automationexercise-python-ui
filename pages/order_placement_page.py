@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class OrderPlacementPage(BasePage):
 
-    PAGE_URL = Links.ORDER_PLACEMENT_PAGE
+    # PAGE_URL = Links.ORDER_PLACEMENT_PAGE
 
     CONTINUE_BTTN = ('css selector', '[data-qa="continue-button"]')
     DOWNLOAD_INVOICE_BTTN = ('css selector', '[href="/download_invoice/500"]')
