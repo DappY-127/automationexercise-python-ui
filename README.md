@@ -5,17 +5,17 @@ Implementation of automation of test [scenarios](https://automationexercise.com/
 ## Work on the project is in progress
 
 The basic structure for test implementation has been written.
-9 out of 26 automated tests have been developed
+19 out of 26 automated tests have been developed
 
-![Progress](https://progress-bar.dev/33/?title=done)
+![Progress](https://progress-bar.dev/73/?title=done)
 
 ## List of tested features 
 
 ### User Management:
    - User Authentication:
      - [x] User Registration (Test Case 1, Test Case 5)
-     - [ ] User Login (Test Case 2, Test Case 3) - In Progress
-     - [ ] User Logout (Test Case 4) - In Progress
+     - [x] User Login (Test Case 2, Test Case 3) 
+     - [x] User Logout (Test Case 4)
 
 ### Customer Support:
    - [x] Contact Us Form (Test Case 6)
@@ -44,10 +44,10 @@ The basic structure for test implementation has been written.
      - [x] Verify Subscription in Home Page (Test Case 10)
      - [x] Verify Subscription in Cart Page (Test Case 11)
    - Checkout Process:
-     - [ ] Place Order: Register While Checkout (Test Case 14) - Not Developed
-     - [ ] Place Order: Register Before Checkout (Test Case 15) - Not Developed
-     - [ ] Place Order: Login Before Checkout (Test Case 16) - Not Developed
-     - [ ] Verify Address Details in Checkout Page (Test Case 23) - Not Developed
-     - [ ] Download Invoice After Purchase Order (Test Case 24) - Not Developed
+     - [ ] Place Order: Register While Checkout (Test Case 14) - In Progress
+     - [ ] Place Order: Register Before Checkout (Test Case 15) - In Progress
+     - [ ] Place Order: Login Before Checkout (Test Case 16) - In Progress
+     - [ ] Verify Address Details in Checkout Page (Test Case 23) - In Progress
+     - [ ] Download Invoice After Purchase Order (Test Case 24) - In Progress
      - [ ] Search Products and Verify Cart After Login (Test Case 20) - Not Developed
 

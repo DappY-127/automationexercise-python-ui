@@ -39,6 +39,7 @@ class SignupLoginPage(BasePage):
     @allure.step("Click signup button")
     def click_signup_button(self):
         self.wait.until(EC.element_to_be_clickable(self.SIGNUP_BTTN)).click()
+        self.check_and_close_ad_if_present()
         
     @allure.step("Enter login email")
     def enter_login(self):
@@ -51,6 +52,7 @@ class SignupLoginPage(BasePage):
     @allure.step("Click login button")
     def click_login_button(self):
         self.wait.until(EC.element_to_be_clickable(self.LOGIN_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("'Email Address already exist!' error message visible")
     def is_email_exist_error_visible(self):       

@@ -1,5 +1,6 @@
 import allure
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
 
 
 class HeaderFooterElements():
@@ -21,42 +22,54 @@ class HeaderFooterElements():
     USERNAME_FIELD = ("xpath", "//input[@name='username']")
     USER_STATUS = ('xpath', '//a[contains(text(), "Logged in as")]')
 
+    AD_IFRAME = ('xpath', '//*[@id="ad_iframe"]')
+    AD_CLOSE_BTTN = ('xpath', '//*[@id="dismiss-button"]')
+
     @allure.step("Click Signup/Login header button")
     def click_signup_login_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_SIGNUP_LOGIN_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click delete account header button")
     def click_delete_account_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_DELETE_ACC_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click logout header button")
     def click_logout_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_LOGOUT_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click 'Test Cases' header button")
     def click_testcases_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_TEST_CASE_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click 'Contact Us' header button")
     def click_contact_us_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_CONTACT_US_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click subscribe footer button")
     def click_subscribe_button(self):
         self.wait.until(EC.element_to_be_clickable(self.SUBSCRIPTION_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click cart header button")
     def click_cart_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_CART_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click products header button")
     def click_products_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_PRODUCTS_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click delete account header button")
     def click_delete_account_button(self):
         self.wait.until(EC.visibility_of_element_located(self.HEADER_DELETE_ACC_BTTN))  
         self.wait.until(EC.element_to_be_clickable(self.HEADER_DELETE_ACC_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("'SUBSCRIPTION' footer block visible")
     def is_subscription_label_visible(self):
@@ -83,3 +96,27 @@ class HeaderFooterElements():
     def is_succes_subscription_mssg_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.SUCCESS_SUBSCRIBE_MSSG))   
         self.make_screenshot("Success message")
+
+    def check_and_close_ad_if_present(self):
+        try:
+            self.browser.implicitly_wait(1)  # Set a short implicit wait to quickly check for the presence of ad iframe
+
+            # Check if the ad iframe is present and switch to it
+            ad_iframe = self.browser.find_element(*self.AD_IFRAME)
+            self.browser.switch_to.frame(ad_iframe)
+            self.make_screenshot('Ad popup :(')
+
+            close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
+            close_button.click()
+
+            # Switch back to the default content
+            self.browser.switch_to.default_content()
+            
+            allure.attach(
+                body="Ad popup detected. Screenshot captured.",
+                name="Ad Popup",
+                attachment_type=allure.attachment_type.TEXT,
+            )
+        except NoSuchElementException:
+            pass
+

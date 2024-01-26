@@ -77,6 +77,7 @@ class ProductsPage(BasePage):
         view_bttn_locator = ("xpath", f"//div[@class='choose']//a[@href='/product_details/{product_id}']")
         self.scroll_into_view(view_bttn_locator)
         self.wait.until(EC.element_to_be_clickable(view_bttn_locator)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Click '{product_brand}' product brand")
     def click_product_sidebar_category(self, product_brand):
@@ -100,6 +101,7 @@ class ProductsPage(BasePage):
         product_category = ('css selector', f'.left-sidebar .brands-name a[href="/brand_products/{product_brand}"]')
         self.scroll_into_view(product_category)
         self.wait.until(EC.element_to_be_clickable(product_category)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Verify '{product_brand}' product brand category is opened")
     def verify_brand_page_and_brand_products(self, product_brand):
@@ -121,6 +123,7 @@ class ProductsPage(BasePage):
 
         self.wait.until(EC.element_to_be_clickable(category_locator)).click()
         self.wait.until(EC.element_to_be_clickable(subcategory_locator)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Verify '{category} -> {subcategory}' category and subcategory are opened")
     def verify_category_and_subcategory_products(self, category, subcategory):
