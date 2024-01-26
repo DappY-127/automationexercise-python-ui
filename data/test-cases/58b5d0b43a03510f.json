@@ -1,0 +1,275 @@
+{
+  "uid" : "58b5d0b43a03510f",
+  "name" : "Verify Test Cases Page",
+  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_verify_testcase_page",
+  "historyId" : "273aad17eb8d3a2c2195e499aa172817",
+  "time" : {
+    "start" : 1706260062536,
+    "stop" : 1706260065738,
+    "duration" : 3202
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706259951296,
+      "stop" : 1706259951381,
+      "duration" : 85
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706260062266,
+      "stop" : 1706260062536,
+      "duration" : 270
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706260061392,
+      "stop" : 1706260062266,
+      "duration" : 874
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706260062536,
+        "stop" : 1706260063722,
+        "duration" : 1186
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Site header visible",
+      "time" : {
+        "start" : 1706260063722,
+        "stop" : 1706260063740,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click 'Test Cases' header button",
+      "time" : {
+        "start" : 1706260063740,
+        "stop" : 1706260065408,
+        "duration" : 1668
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/test_cases is opened",
+      "time" : {
+        "start" : 1706260065408,
+        "stop" : 1706260065411,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Test cases panels visible",
+      "time" : {
+        "start" : 1706260065411,
+        "stop" : 1706260065606,
+        "duration" : 195
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ba1402e814f20f4d",
+      "name" : "test case page",
+      "source" : "ba1402e814f20f4d.png",
+      "type" : "image/png",
+      "size" : 124389
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706260065739,
+      "stop" : 1706260065853,
+      "duration" : 114
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "TestCaseID: 7"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Interface & Navigation"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "scrolling_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScrollingFeature"
+  }, {
+    "name" : "host",
+    "value" : "92ae20b24d98"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.scrolling_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "659bb358041df5dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705931937697,
+          "stop" : 1705931940159,
+          "duration" : 2462
+        }
+      }, {
+        "uid" : "1ccd701d0ef9efa9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705862620594,
+          "stop" : 1705862623730,
+          "duration" : 3136
+        }
+      }, {
+        "uid" : "50792a04a76d6a43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705492237492,
+          "stop" : 1705492239765,
+          "duration" : 2273
+        }
+      }, {
+        "uid" : "80aeda1e8054700f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176858255,
+          "stop" : 1705176863191,
+          "duration" : 4936
+        }
+      }, {
+        "uid" : "ac6ff5c32c0c7949",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704878912187,
+          "stop" : 1704878915974,
+          "duration" : 3787
+        }
+      }, {
+        "uid" : "a9411ff25f95c390",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793939748,
+          "stop" : 1704793942097,
+          "duration" : 2349
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 7" ]
+  },
+  "source" : "58b5d0b43a03510f.json",
+  "parameterValues" : [ ]
+}
