@@ -30,6 +30,11 @@ class HeaderFooterElements():
         self.wait.until(EC.element_to_be_clickable(self.HEADER_SIGNUP_LOGIN_BTTN)).click()
         self.check_and_close_ad_if_present()
 
+    @allure.step("Click Home header button")
+    def click_home_button(self):
+        self.wait.until(EC.element_to_be_clickable(self.HEADER_HOME_BTTN)).click()
+        self.check_and_close_ad_if_present()
+
     @allure.step("Click delete account header button")
     def click_delete_account_button(self):
         self.wait.until(EC.element_to_be_clickable(self.HEADER_DELETE_ACC_BTTN)).click()
