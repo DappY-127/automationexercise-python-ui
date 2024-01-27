@@ -106,8 +106,9 @@ class CartPage(BasePage):
     @allure.step("Click 'Register / Login' button")
     def click_login_register_bttn(self):
         self.is_checkout_modal_visible()
-        self.wait.until(EC.element_to_be_clickable(self.MODAL_REGISTER_LOGIN_BTTN)).click()   
+        self.wait.until(EC.element_to_be_clickable(self.MODAL_REGISTER_LOGIN_BTTN)).click()
     
     @allure.step("Click 'Proceed To Checkout' button")
     def click_proceed_to_checkout_bttn(self):
-        self.wait.until(EC.element_to_be_clickable(self.PROCEED_TO_CHECKOUT_BTTN)).click()   
+        self.wait.until(EC.element_to_be_clickable(self.PROCEED_TO_CHECKOUT_BTTN)).click()
+        self.check_and_close_ad_if_present()   
