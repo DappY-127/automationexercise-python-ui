@@ -30,7 +30,7 @@ class PaymentPage(BasePage):
         self.make_screenshot('Filled card information section form')
 
     @allure.step("Payment label visible")
-    def is_products_visible(self):
+    def is_payments_label_visible(self):
         self.wait.until(EC.visibility_of_element_located(self.PAYMENT_LABEL))
         self.make_screenshot("Payment Label")
 
