@@ -14,6 +14,7 @@ class AccountDeletedPage(BasePage):
     @allure.step("Click continue button")
     def click_continue_button(self):
         self.wait.until(EC.element_to_be_clickable(self.CONTINUE_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("User deletion message visible")
     def is_account_deleted_message_visible(self):

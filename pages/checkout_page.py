@@ -45,6 +45,7 @@ class CheckoutPage(BasePage):
     def click_place_order_button(self):
         self.scroll_into_view(self.PLACE_ORDER_BTTN)
         self.wait.until(EC.element_to_be_clickable(self.PLACE_ORDER_BTTN)).click()
+        self.check_and_close_ad_if_present()
     
     @allure.step("Fill order comment")
     def fill_order_commnets(self):

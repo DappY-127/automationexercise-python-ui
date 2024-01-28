@@ -15,6 +15,7 @@ class OrderPlacementPage(BasePage):
     @allure.step("Click continue button")
     def click_continue_button(self):
         self.wait.until(EC.element_to_be_clickable(self.CONTINUE_BTTN)).click()
+        self.check_and_close_ad_if_present()
     
     @allure.step("Click 'Download Invoice' button")
     def click_download_invoice_button(self):

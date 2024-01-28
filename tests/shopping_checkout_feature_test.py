@@ -75,7 +75,7 @@ class TestShoppingCheckoutFeature(BaseTest):
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.story("Checkout Process")
     @allure.tag('TestCaseID: 15')
-    def test_verify_(self):
+    def test_order_placement_register_before_checkout(self):
         self.account_register()
 
         self.home_page.click_products_button()
