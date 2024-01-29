@@ -19,6 +19,7 @@ class PaymentPage(BasePage):
     @allure.step("Click confirm order button")
     def click_confirm_order_button(self):
         self.wait.until(EC.element_to_be_clickable(self.PAY_AND_CONFIRM_ORDER_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Fill 'Enter payment details' section")
     def fill_payment_details_section(self):
