@@ -32,7 +32,9 @@ class SignupPage(BasePage):
 
     @allure.step("Click create account button")
     def click_create_account_button(self):
+        self.scroll_into_view(self.CREATE_ACC_BTTN)
         self.wait.until(EC.element_to_be_clickable(self.CREATE_ACC_BTTN)).click()
+        self.check_and_close_ad_if_present()
 
     @allure.step("Fill 'Enter Account Information' section")
     def fill_account_info_section(self):

@@ -122,6 +122,7 @@ class ProductsPage(BasePage):
         subcategory_locator = ('xpath', f'//div[@id="{category}"]//a[contains(text(), "{subcategory}")]')
 
         self.wait.until(EC.element_to_be_clickable(category_locator)).click()
+        self.check_and_close_ad_if_present()
         self.wait.until(EC.element_to_be_clickable(subcategory_locator)).click()
         self.check_and_close_ad_if_present()
 
