@@ -1,0 +1,514 @@
+{
+  "uid" : "ea2f96e085135549",
+  "name" : "Remove All Products From Cart",
+  "fullName" : "tests.product_management_feature_test.TestProductManagementFeature#test_remove_product_from_cart_until_products_present",
+  "historyId" : "f348e6fd044b53ac7610866cf3c2ac85",
+  "time" : {
+    "start" : 1706614297313,
+    "stop" : 1706614303914,
+    "duration" : 6601
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706614297042,
+      "stop" : 1706614297313,
+      "duration" : 271
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706614242896,
+      "stop" : 1706614242976,
+      "duration" : 80
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706614296175,
+      "stop" : 1706614297041,
+      "duration" : 866
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706614297313,
+        "stop" : 1706614299314,
+        "duration" : 2001
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706614299314,
+        "stop" : 1706614299325,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click products header button",
+      "time" : {
+        "start" : 1706614299325,
+        "stop" : 1706614300206,
+        "duration" : 881
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/products is opened",
+      "time" : {
+        "start" : 1706614300207,
+        "stop" : 1706614300221,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Add product: 'Lace Top For Women' to cart",
+      "time" : {
+        "start" : 1706614300221,
+        "stop" : 1706614300707,
+        "duration" : 486
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1706614300298,
+          "stop" : 1706614300306,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Lace Top For Women'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Hover mouse over element",
+        "time" : {
+          "start" : 1706614300306,
+          "stop" : 1706614300654,
+          "duration" : 348
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Lace Top For Women'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product_name",
+        "value" : "'Lace Top For Women'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Click 'View Cart' button",
+      "time" : {
+        "start" : 1706614300708,
+        "stop" : 1706614302239,
+        "duration" : 1531
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "'Your product has been added to cart.' modal pop up visible",
+        "time" : {
+          "start" : 1706614300708,
+          "stop" : 1706614301799,
+          "duration" : 1091
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/view_cart is opened",
+      "time" : {
+        "start" : 1706614302239,
+        "stop" : 1706614302247,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Products at cart presence",
+      "time" : {
+        "start" : 1706614302247,
+        "stop" : 1706614302584,
+        "duration" : 337
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check if the cart is not empty",
+        "time" : {
+          "start" : 1706614302247,
+          "stop" : 1706614302420,
+          "duration" : 173
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "3144e26e19f3df00",
+          "name" : "Cart Empty Check",
+          "source" : "3144e26e19f3df00.attach",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "56d030e2f8b86126",
+          "name" : "Cart Product",
+          "source" : "56d030e2f8b86126.png",
+          "type" : "image/png",
+          "size" : 81329
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Get list of product names in the cart",
+        "time" : {
+          "start" : 1706614302420,
+          "stop" : 1706614302441,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "9c3635d1b5d5005",
+          "name" : "Cart Products",
+          "source" : "9c3635d1b5d5005.attach",
+          "type" : "text/plain",
+          "size" : 33
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "961bb23e84217512",
+        "name" : "Products Presence Check",
+        "source" : "961bb23e84217512.attach",
+        "type" : "text/plain",
+        "size" : 36
+      }, {
+        "uid" : "c1280661c2695fb5",
+        "name" : "Cart products",
+        "source" : "c1280661c2695fb5.png",
+        "type" : "image/png",
+        "size" : 81329
+      } ],
+      "parameters" : [ {
+        "name" : "product_names_to_check",
+        "value" : "('Lace Top For Women',)"
+      } ],
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Delete first product from cart",
+      "time" : {
+        "start" : 1706614302584,
+        "stop" : 1706614302782,
+        "duration" : 198
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check if the cart is not empty",
+        "time" : {
+          "start" : 1706614302584,
+          "stop" : 1706614302718,
+          "duration" : 134
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "d59fd50ba32b2b17",
+          "name" : "Cart Empty Check",
+          "source" : "d59fd50ba32b2b17.attach",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "4d53e852ddedc7eb",
+          "name" : "Cart Product",
+          "source" : "4d53e852ddedc7eb.png",
+          "type" : "image/png",
+          "size" : 81329
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Get list of product names in the cart",
+        "time" : {
+          "start" : 1706614302760,
+          "stop" : 1706614302768,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "affa1a7b42dc8bd",
+          "name" : "Cart Products",
+          "source" : "affa1a7b42dc8bd.attach",
+          "type" : "text/plain",
+          "size" : 33
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "a334b684fa70289",
+        "name" : "Deleted Product",
+        "source" : "a334b684fa70289.attach",
+        "type" : "text/plain",
+        "size" : 35
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Check if the cart is empty",
+      "time" : {
+        "start" : 1706614302782,
+        "stop" : 1706614303914,
+        "duration" : 1132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8ea9ea09ba204c51",
+        "name" : "Cart Empty Check",
+        "source" : "8ea9ea09ba204c51.attach",
+        "type" : "text/plain",
+        "size" : 157
+      }, {
+        "uid" : "4625690c0a68c33e",
+        "name" : "Empty Cart",
+        "source" : "4625690c0a68c33e.png",
+        "type" : "image/png",
+        "size" : 52974
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 11,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 17,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706614303915,
+      "stop" : 1706614304030,
+      "duration" : 115
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "TestCaseID: ~"
+  }, {
+    "name" : "feature",
+    "value" : "Product Management"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "Cart & Wishlist"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "product_management_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductManagementFeature"
+  }, {
+    "name" : "host",
+    "value" : "018e8ebf9f49"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.product_management_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "8c2ea50953895e3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706260037288,
+          "stop" : 1706260044481,
+          "duration" : 7193
+        }
+      }, {
+        "uid" : "b18502aca6410608",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705931914640,
+          "stop" : 1705931921475,
+          "duration" : 6835
+        }
+      }, {
+        "uid" : "fcc8c7500007d2c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705862595780,
+          "stop" : 1705862602546,
+          "duration" : 6766
+        }
+      }, {
+        "uid" : "c89888751992dc75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705492225087,
+          "stop" : 1705492230442,
+          "duration" : 5355
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: ~" ]
+  },
+  "source" : "ea2f96e085135549.json",
+  "parameterValues" : [ ]
+}

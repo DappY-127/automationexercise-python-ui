@@ -1,0 +1,505 @@
+{
+  "uid" : "3607f45b0db3686b",
+  "name" : "Contact Us Form",
+  "fullName" : "tests.customer_support_feature_test.TestContactUsFeature#test_contact_us_form",
+  "historyId" : "e65723a6056ad021773889a9622c5514",
+  "time" : {
+    "start" : 1706614244199,
+    "stop" : 1706614248039,
+    "duration" : 3840
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706614242976,
+      "stop" : 1706614243908,
+      "duration" : 932
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706614242896,
+      "stop" : 1706614242976,
+      "duration" : 80
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706614243909,
+      "stop" : 1706614244198,
+      "duration" : 289
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706614244199,
+        "stop" : 1706614245419,
+        "duration" : 1220
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706614245419,
+        "stop" : 1706614245431,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Site header visible",
+      "time" : {
+        "start" : 1706614245431,
+        "stop" : 1706614245449,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click 'Contact Us' header button",
+      "time" : {
+        "start" : 1706614245450,
+        "stop" : 1706614246126,
+        "duration" : 676
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/contact_us is opened",
+      "time" : {
+        "start" : 1706614246126,
+        "stop" : 1706614246134,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'Contact Us' send form visible",
+      "time" : {
+        "start" : 1706614246134,
+        "stop" : 1706614246425,
+        "duration" : 291
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7dc6c2c4392aa12",
+        "name" : "Contact Us form",
+        "source" : "7dc6c2c4392aa12.png",
+        "type" : "image/png",
+        "size" : 91436
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Fill Contact Us form with random data",
+      "time" : {
+        "start" : 1706614246425,
+        "stop" : 1706614246908,
+        "duration" : 483
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'James Lopez'",
+        "time" : {
+          "start" : 1706614246425,
+          "stop" : 1706614246492,
+          "duration" : 67
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"name\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'James Lopez'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'thomassmith@example.net'",
+        "time" : {
+          "start" : 1706614246492,
+          "stop" : 1706614246567,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'thomassmith@example.net'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Face spend say chance turn anything month.'",
+        "time" : {
+          "start" : 1706614246567,
+          "stop" : 1706614246655,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"subject\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'Face spend say chance turn anything month.'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Somebody another father window.'",
+        "time" : {
+          "start" : 1706614246655,
+          "stop" : 1706614246735,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"message\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'Somebody another father window.'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "5c84765cb2e567ea",
+        "name" : "Filled form",
+        "source" : "5c84765cb2e567ea.png",
+        "type" : "image/png",
+        "size" : 100523
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "Upload file to Contact Us form",
+      "time" : {
+        "start" : 1706614246908,
+        "stop" : 1706614247072,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4cac98897d017c30",
+        "name" : "File uploaded",
+        "source" : "4cac98897d017c30.png",
+        "type" : "image/png",
+        "size" : 101628
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click submit button",
+      "time" : {
+        "start" : 1706614247072,
+        "stop" : 1706614247128,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Accept confirmation alert",
+      "time" : {
+        "start" : 1706614247128,
+        "stop" : 1706614247131,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click Home button",
+      "time" : {
+        "start" : 1706614247300,
+        "stop" : 1706614248020,
+        "duration" : 720
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Site header visible",
+      "time" : {
+        "start" : 1706614248020,
+        "stop" : 1706614248032,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706614248032,
+        "stop" : 1706614248039,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c98a7b4cbcf1da9d",
+      "name" : "Success message",
+      "source" : "c98a7b4cbcf1da9d.png",
+      "type" : "image/png",
+      "size" : 89706
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 17,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706614248040,
+      "stop" : 1706614248184,
+      "duration" : 144
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "TestCaseID: 6"
+  }, {
+    "name" : "feature",
+    "value" : "Customer Support"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "customer_support_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestContactUsFeature"
+  }, {
+    "name" : "host",
+    "value" : "018e8ebf9f49"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.customer_support_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "6e9d8dec447fe287",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706259952601,
+          "stop" : 1706259957957,
+          "duration" : 5356
+        }
+      }, {
+        "uid" : "11c76104668a66d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705931817008,
+          "stop" : 1705931821845,
+          "duration" : 4837
+        }
+      }, {
+        "uid" : "a81d9aacbe5e9c4b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705862530161,
+          "stop" : 1705862535902,
+          "duration" : 5741
+        }
+      }, {
+        "uid" : "aa2b6b208cb7890",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705492200593,
+          "stop" : 1705492203882,
+          "duration" : 3289
+        }
+      }, {
+        "uid" : "de0a2e869d4d545d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176845314,
+          "stop" : 1705176849346,
+          "duration" : 4032
+        }
+      }, {
+        "uid" : "cb49ab3e7d080bf8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704878901004,
+          "stop" : 1704878904691,
+          "duration" : 3687
+        }
+      }, {
+        "uid" : "6389a3ec4e40ccc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793927296,
+          "stop" : 1704793931863,
+          "duration" : 4567
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 6" ]
+  },
+  "source" : "3607f45b0db3686b.json",
+  "parameterValues" : [ ]
+}

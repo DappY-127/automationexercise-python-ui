@@ -34,19 +34,19 @@
       "total" : 2
     }
   }, {
-    "uid" : "9bf97060ccde1345fbd62d132bd91b64",
-    "name" : "Customer Support",
+    "uid" : "2b3882ec55ec5e64d01bbad5c589847e",
+    "name" : "Shopping & Checkout",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     }
   }, {
-    "uid" : "2b3882ec55ec5e64d01bbad5c589847e",
-    "name" : "Shopping & Checkout",
+    "uid" : "9bf97060ccde1345fbd62d132bd91b64",
+    "name" : "Customer Support",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
