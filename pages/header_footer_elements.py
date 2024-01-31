@@ -23,8 +23,10 @@ class HeaderFooterElements():
     USER_STATUS = ('xpath', '//a[contains(text(), "Logged in as")]')
 
     AD_IFRAME = ('xpath', '//*[@id="ad_iframe"]')
-    AD_FULL_IFRAME = ('xpath', '//*[@id="ad_position_box"]')
+    AD_FULL_IFRAME = ('xpath', '//div[@id="ad_position_box"]')
     AD_CLOSE_BTTN = ('xpath', '//*[@id="dismiss-button"]')
+    ACTIVE_AD = ('css selector', 'ins.adsbygoogle[data-ad-status="filled"][data-vignette-loaded="true"]')
+    ACTIVE_AD_IFRAME = ('css selector', 'ins.adsbygoogle[data-ad-status="filled"][data-vignette-loaded="true"] iframe')
 
     @allure.step("Click Signup/Login header button")
     def click_signup_login_button(self):
@@ -105,13 +107,11 @@ class HeaderFooterElements():
 
     def check_and_close_ad_if_present(self):
         # try:
-        #     self.browser.implicitly_wait(2)  # Set a short implicit wait to quickly check for the presence of ad iframe
-
-        #     # Check if the ad iframe is present and switch to it
-        #     ad_iframe = self.browser.find_element(*self.AD_IFRAME)
-        #     self.browser.switch_to.frame(ad_iframe)
+        #     self.browser.implicitly_wait(1)  # Set a short implicit wait to quickly check for the presence of ad iframe
         #     self.make_screenshot('Ad popup :(')
-
+        #     # Check if the ad iframe is present and switch to it
+        #     ad_iframe = self.browser.find_element(*self.ACTIVE_AD_IFRAME)
+        #     self.browser.switch_to.frame(ad_iframe)
         #     close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
         #     close_button.click()
 
@@ -127,9 +127,10 @@ class HeaderFooterElements():
         # except NoSuchElementException:
         #     pass
         try:
-            ad_iframe = self.browser.find_element(*self.AD_IFRAME)
+            ad_iframe = self.browser.find_element(*self.ACTIVE_AD_IFRAME)
             if ad_iframe.is_displayed():
                 with allure.step("Close Advertisement"):
+                    self.browser.switch_to.frame(ad_iframe)
                     ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
                     ad_close_button.click()
                     allure.attach("Advertisement Closed", name="Advertisement Status", attachment_type=allure.attachment_type.TEXT)
