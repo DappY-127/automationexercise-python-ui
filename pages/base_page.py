@@ -26,11 +26,12 @@ class BasePage(HeaderFooterElements):
     def is_opened(self):
         # with allure.step(f"Page {self.PAGE_URL} is opened"):
         #     self.wait.until(EC.url_to_be(self.PAGE_URL))
-
+        
+        self.check_and_close_ad_if_present()
         try:
             with allure.step(f"Page {self.PAGE_URL} is opened"):
                 self.check_and_close_ad_if_present()
-                # self.wait.until_not(EC.url_contains("#google_vignette"))
+                self.wait.until_not(EC.url_contains("#google_vignette"))
                 self.wait.until(EC.url_to_be(self.PAGE_URL))
         except Exception as e:
             current_url = self.browser.current_url
