@@ -1,0 +1,330 @@
+{
+  "uid" : "525926f11833640e",
+  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
+  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_scroll_up_arrow_bttn_with_scroll_down",
+  "historyId" : "812571f40d6906b321564172fa11f79d",
+  "time" : {
+    "start" : 1706727238069,
+    "stop" : 1706727240207,
+    "duration" : 2138
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706727153369,
+      "stop" : 1706727153444,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706727237799,
+      "stop" : 1706727238068,
+      "duration" : 269
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706727236903,
+      "stop" : 1706727237799,
+      "duration" : 896
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706727238069,
+        "stop" : 1706727239341,
+        "duration" : 1272
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706727239341,
+        "stop" : 1706727239354,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Scroll down page to bottom",
+      "time" : {
+        "start" : 1706727239354,
+        "stop" : 1706727239359,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'SUBSCRIPTION' footer block visible",
+      "time" : {
+        "start" : 1706727239360,
+        "stop" : 1706727239571,
+        "duration" : 211
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click move upward arrow button",
+      "time" : {
+        "start" : 1706727239785,
+        "stop" : 1706727239849,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Site header visible",
+      "time" : {
+        "start" : 1706727239849,
+        "stop" : 1706727239864,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'Full-Fledged practice website...' slider text label visible",
+      "time" : {
+        "start" : 1706727239864,
+        "stop" : 1706727239906,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "11fe28fa8b90b072",
+      "name" : "page scrolled down",
+      "source" : "11fe28fa8b90b072.png",
+      "type" : "image/png",
+      "size" : 25566
+    }, {
+      "uid" : "9a31b8f240205ccd",
+      "name" : "page scrolled up",
+      "source" : "9a31b8f240205ccd.png",
+      "type" : "image/png",
+      "size" : 518382
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706727240208,
+      "stop" : 1706727240322,
+      "duration" : 114
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "TestCaseID: 25"
+  }, {
+    "name" : "feature",
+    "value" : "Interface & Navigation"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Scroll Functionality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "scrolling_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScrollingFeature"
+  }, {
+    "name" : "host",
+    "value" : "024d1895da51"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.scrolling_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "d99c8fc884bc3f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706614314861,
+          "stop" : 1706614316950,
+          "duration" : 2089
+        }
+      }, {
+        "uid" : "b2c3156ca851ce90",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706260056116,
+          "stop" : 1706260058055,
+          "duration" : 1939
+        }
+      }, {
+        "uid" : "e821e6ce2f17055c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705931931313,
+          "stop" : 1705931933357,
+          "duration" : 2044
+        }
+      }, {
+        "uid" : "845587169045ddc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705862613645,
+          "stop" : 1705862616018,
+          "duration" : 2373
+        }
+      }, {
+        "uid" : "46698d66e22d67ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705492231640,
+          "stop" : 1705492233314,
+          "duration" : 1674
+        }
+      }, {
+        "uid" : "c0cb8895fa7615a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176850571,
+          "stop" : 1705176853152,
+          "duration" : 2581
+        }
+      }, {
+        "uid" : "4fea7bd835f7adc1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704878905900,
+          "stop" : 1704878907940,
+          "duration" : 2040
+        }
+      }, {
+        "uid" : "93489a32483cc96d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704793933036,
+          "stop" : 1704793935513,
+          "duration" : 2477
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 25" ]
+  },
+  "source" : "525926f11833640e.json",
+  "parameterValues" : [ ]
+}

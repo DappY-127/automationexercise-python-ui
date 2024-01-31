@@ -1,0 +1,430 @@
+{
+  "uid" : "ca7d39eb1d4de16",
+  "name" : "Verify Product Quantity in Cart",
+  "fullName" : "tests.product_management_feature_test.TestProductManagementFeature#test_product_cart_quantity",
+  "historyId" : "56c054bcd44e5f7cf9af5c46a7e0141d",
+  "time" : {
+    "start" : 1706727205267,
+    "stop" : 1706727211019,
+    "duration" : 5752
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706727204969,
+      "stop" : 1706727205267,
+      "duration" : 298
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706727153369,
+      "stop" : 1706727153444,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706727204045,
+      "stop" : 1706727204968,
+      "duration" : 923
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706727205267,
+        "stop" : 1706727206133,
+        "duration" : 866
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706727206133,
+        "stop" : 1706727206146,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click on 'View product' product bttn by product id",
+      "time" : {
+        "start" : 1706727206147,
+        "stop" : 1706727208226,
+        "duration" : 2079
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1706727206147,
+          "stop" : 1706727206162,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"//div[@class='choose']//a[@href='/product_details/6']\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product_id",
+        "value" : "6"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Product information visible",
+      "time" : {
+        "start" : 1706727208226,
+        "stop" : 1706727208338,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Set product quantity",
+      "time" : {
+        "start" : 1706727208338,
+        "stop" : 1706727208410,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: '4'",
+        "time" : {
+          "start" : 1706727208338,
+          "stop" : 1706727208410,
+          "duration" : 72
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#quantity')"
+        }, {
+          "name" : "value",
+          "value" : "'4'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "quantity",
+        "value" : "4"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click 'Add to cart' button",
+      "time" : {
+        "start" : 1706727208410,
+        "stop" : 1706727208464,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click 'View Cart' button",
+      "time" : {
+        "start" : 1706727208464,
+        "stop" : 1706727210729,
+        "duration" : 2265
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "'Your product has been added to cart.' modal pop up visible",
+        "time" : {
+          "start" : 1706727208464,
+          "stop" : 1706727209551,
+          "duration" : 1087
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/view_cart is opened",
+      "time" : {
+        "start" : 1706727210729,
+        "stop" : 1706727210739,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Check firs cart product quantity",
+      "time" : {
+        "start" : 1706727210740,
+        "stop" : 1706727211018,
+        "duration" : 278
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get list of product quantities in the cart",
+        "time" : {
+          "start" : 1706727210740,
+          "stop" : 1706727210771,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "3f5239216c3f6606",
+          "name" : "Cart Product Quantities",
+          "source" : "3f5239216c3f6606.attach",
+          "type" : "text/plain",
+          "size" : 21
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Verify quantity is correct for first cart product",
+        "time" : {
+          "start" : 1706727210771,
+          "stop" : 1706727210771,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "683c7270a2459cb",
+        "name" : "Product quantity",
+        "source" : "683c7270a2459cb.png",
+        "type" : "image/png",
+        "size" : 208133
+      } ],
+      "parameters" : [ {
+        "name" : "quantity",
+        "value" : "4"
+      } ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 14,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706727211019,
+      "stop" : 1706727211149,
+      "duration" : 130
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Cart & Wishlist"
+  }, {
+    "name" : "feature",
+    "value" : "Product Management"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 13"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "product_management_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductManagementFeature"
+  }, {
+    "name" : "host",
+    "value" : "024d1895da51"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.product_management_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "7f6f28b836a9c415",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1706727187018,
+        "stop" : 1706727203854,
+        "duration" : 16836
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "34593bac4e3a966a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706614282151,
+          "stop" : 1706614286912,
+          "duration" : 4761
+        }
+      }, {
+        "uid" : "55d0de18b6e10c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706259981999,
+          "stop" : 1706259986437,
+          "duration" : 4438
+        }
+      }, {
+        "uid" : "db06b97950145411",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705931881533,
+          "stop" : 1705931885513,
+          "duration" : 3980
+        }
+      }, {
+        "uid" : "42aafb4bf009c428",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705862579929,
+          "stop" : 1705862584526,
+          "duration" : 4597
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 13" ]
+  },
+  "source" : "ca7d39eb1d4de16.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,357 @@
+{
+  "uid" : "1f19d62e0917024e",
+  "name" : "Login User with incorrect email and password",
+  "fullName" : "tests.user_management_feature_test.TestRegistrationFeature#test_login_with_invalid_data",
+  "historyId" : "cb50349330fe984789b930084c4e54df",
+  "time" : {
+    "start" : 1706727375411,
+    "stop" : 1706727378918,
+    "duration" : 3507
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706727374251,
+      "stop" : 1706727375136,
+      "duration" : 885
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706727153369,
+      "stop" : 1706727153444,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706727375136,
+      "stop" : 1706727375411,
+      "duration" : 275
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706727375411,
+        "stop" : 1706727376262,
+        "duration" : 851
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706727376262,
+        "stop" : 1706727376275,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click Signup/Login header button",
+      "time" : {
+        "start" : 1706727376275,
+        "stop" : 1706727377288,
+        "duration" : 1013
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1706727377288,
+        "stop" : 1706727377297,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter incorrect email address and password",
+      "time" : {
+        "start" : 1706727377297,
+        "stop" : 1706727377595,
+        "duration" : 298
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'example.test@mail.com'",
+        "time" : {
+          "start" : 1706727377298,
+          "stop" : 1706727377499,
+          "duration" : 201
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"login-email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'example.test@mail.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'realyincorrectpassword'",
+        "time" : {
+          "start" : 1706727377499,
+          "stop" : 1706727377595,
+          "duration" : 96
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"login-password\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'realyincorrectpassword'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Click login button",
+      "time" : {
+        "start" : 1706727377595,
+        "stop" : 1706727378626,
+        "duration" : 1031
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'Your email or password is incorrect!' error message visible",
+      "time" : {
+        "start" : 1706727378626,
+        "stop" : 1706727378918,
+        "duration" : 292
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify error message text is correct",
+        "time" : {
+          "start" : 1706727378752,
+          "stop" : 1706727378752,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "99d8bb85b26d701f",
+        "name" : "'Your email or password is incorrect!' error",
+        "source" : "99d8bb85b26d701f.png",
+        "type" : "image/png",
+        "size" : 65108
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706727378919,
+      "stop" : 1706727379036,
+      "duration" : 117
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Registration Functionality"
+  }, {
+    "name" : "story",
+    "value" : "User login"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 3"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "user_management_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegistrationFeature"
+  }, {
+    "name" : "host",
+    "value" : "024d1895da51"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.user_management_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "fc90e1bd9d8d27fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706614399765,
+          "stop" : 1706614402228,
+          "duration" : 2463
+        }
+      }, {
+        "uid" : "f87a6ee91e3b92f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706260117357,
+          "stop" : 1706260121713,
+          "duration" : 4356
+        }
+      }, {
+        "uid" : "f4fdf191eaf7eab6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705932001006,
+          "stop" : 1705932005527,
+          "duration" : 4521
+        }
+      }, {
+        "uid" : "c815c0f1b160af7c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705862646796,
+          "stop" : 1705862649708,
+          "duration" : 2912
+        }
+      }, {
+        "uid" : "beee68078bd849",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705492259677,
+          "stop" : 1705492261756,
+          "duration" : 2079
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 3" ]
+  },
+  "source" : "1f19d62e0917024e.json",
+  "parameterValues" : [ ]
+}
