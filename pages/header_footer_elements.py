@@ -133,6 +133,7 @@ class HeaderFooterElements():
                     self.browser.switch_to.frame(ad_iframe)
                     ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
                     ad_close_button.click()
+                    self.browser.switch_to.default_content()
                     allure.attach("Advertisement Closed", name="Advertisement Status", attachment_type=allure.attachment_type.TEXT)
         except NoSuchElementException:
             # Advertisement iframe not found, no need to close

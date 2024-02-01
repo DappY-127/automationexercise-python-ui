@@ -29,10 +29,16 @@ class BasePage(HeaderFooterElements):
         
         try:
             with allure.step(f"Page {self.PAGE_URL} is opened"):
-                # self.wait.until_not(EC.url_contains("#google_vignette"))
-                self.wait.until_not(EC.visibility_of_element_located(self.AD_IFRAME))
-                # self.wait.until_not(EC.url_to_be(self.PAGE_URL))              
-                self.wait.until(EC.url_to_be(self.PAGE_URL))              
+                if "#google_vignette" in self.browser.current_url:
+                    self.check_and_close_ad_if_present()
+                else:
+                    self.wait.until_not(EC.visibility_of_element_located(self.AD_IFRAME))
+                    self.wait.until(EC.url_to_be(self.PAGE_URL))
+
+                # # self.wait.until_not(EC.url_contains("#google_vignette"))
+                # self.wait.until_not(EC.visibility_of_element_located(self.AD_IFRAME))
+                # # self.wait.until_not(EC.url_to_be(self.PAGE_URL))              
+                # self.wait.until(EC.url_to_be(self.PAGE_URL))              
         except Exception as e:
             current_url = self.browser.current_url
             self.make_screenshot("Opened page")
