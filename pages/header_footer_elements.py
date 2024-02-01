@@ -24,7 +24,8 @@ class HeaderFooterElements():
 
     AD_IFRAME = ('xpath', '//*[@id="ad_iframe"]')
     AD_FULL_IFRAME = ('xpath', '//div[@id="ad_position_box"]')
-    AD_CLOSE_BTTN = ('xpath', '//*[@id="dismiss-button"]')
+    # AD_CLOSE_BTTN = ('xpath', '//*[@id="dismiss-button"]')
+    AD_CLOSE_BTTN = ('css selector', 'div#dismiss-button')
     ACTIVE_AD = ('css selector', 'ins.adsbygoogle[data-ad-status="filled"][data-vignette-loaded="true"]')
     ACTIVE_AD_IFRAME = ('css selector', 'ins.adsbygoogle[data-ad-status="filled"][data-vignette-loaded="true"] iframe')
 
@@ -87,6 +88,9 @@ class HeaderFooterElements():
        
     @allure.step("Site header visible")
     def is_header_visible(self):
+        if "#google_vignette" in self.browser.current_url:
+            self.check_and_close_ad_if_present()
+            
         self.wait.until(EC.visibility_of_element_located(self.HEADER))      
 
     @allure.step("User name header visible")
