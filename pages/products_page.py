@@ -61,8 +61,6 @@ class ProductsPage(BasePage):
 
     @allure.step("Add product: {product_name} to cart")
     def add_product_to_cart_by_name(self, product_name):  
-        # product_locator = ("xpath", "f'//div[@class='product-overlay']//p[text()='{product_name}']'")
-        # product_locator = ("xpath", "f'//div[@class='single-products']//p[text()='{product_name}']'")
         product_name_locator = ("xpath", f"(//p[text()='{product_name}'])[1]")
         product_price_locator = ("xpath", f"//p[text()='{product_name}']/preceding-sibling::h2")
         add_to_cart_locator = ("xpath", f"(//p[text()='{product_name}']/following-sibling::a[@class='btn btn-default add-to-cart'])[2]")

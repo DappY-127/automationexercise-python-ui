@@ -72,7 +72,7 @@ class CheckoutPage(BasePage):
             assert self.data.first_name in name_text, f"Expected: {self.data.first_name} in {name_text}"
             assert self.data.last_name in name_text, f"Expected: {self.data.last_name} in {name_text}"
 
-        with allure.step("Verify address information"):
+        with allure.step("Verify delivery address information"):
             assert self.data.street_address in address1_text, f"Expected: {self.data.street_address} in {address1_text}"
             assert self.data.secondary_address in address2_text, f"Expected: {self.data.secondary_address} in {address2_text}"
             assert self.data.city in address_text, f"Expected: {self.data.city} in {address_text}"
@@ -96,7 +96,7 @@ class CheckoutPage(BasePage):
             assert self.data.first_name in name_text, f"Expected: {self.data.first_name} in {name_text}"
             assert self.data.last_name in name_text, f"Expected: {self.data.last_name} in {name_text}"
 
-        with allure.step("Verify address information"):
+        with allure.step("Verify billing address information"):
             assert self.data.street_address in address1_text, f"Expected: {self.data.street_address} in {address1_text}"
             assert self.data.secondary_address in address2_text, f"Expected: {self.data.secondary_address} in {address2_text}"
             assert self.data.city in address_text, f"Expected: {self.data.city} in {address_text}"

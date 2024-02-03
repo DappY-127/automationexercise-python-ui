@@ -24,21 +24,13 @@ class BasePage(HeaderFooterElements):
             self.browser.get(self.PAGE_URL)         
 
     def is_opened(self):
-        # with allure.step(f"Page {self.PAGE_URL} is opened"):
-        #     self.wait.until(EC.url_to_be(self.PAGE_URL))
-        
         try:
             with allure.step(f"Page {self.PAGE_URL} is opened"):
                 if "#google_vignette" in self.browser.current_url:
                     self.check_and_close_ad_if_present()
                 else:
                     self.wait.until_not(EC.visibility_of_element_located(self.AD_IFRAME))
-                    self.wait.until(EC.url_to_be(self.PAGE_URL))
-
-                # # self.wait.until_not(EC.url_contains("#google_vignette"))
-                # self.wait.until_not(EC.visibility_of_element_located(self.AD_IFRAME))
-                # # self.wait.until_not(EC.url_to_be(self.PAGE_URL))              
-                # self.wait.until(EC.url_to_be(self.PAGE_URL))              
+                    self.wait.until(EC.url_to_be(self.PAGE_URL))             
         except Exception as e:
             current_url = self.browser.current_url
             self.make_screenshot("Opened page")
@@ -54,7 +46,6 @@ class BasePage(HeaderFooterElements):
 
     @allure.step("Fill field with value: {value}")
     def fill_field(self, locator, value):
-        # field = self.wait.until(EC.element_to_be_clickable(locator))
         field = self.wait.until(EC.visibility_of_element_located(locator))
         field.clear()
         field.send_keys(value)

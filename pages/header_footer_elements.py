@@ -111,40 +111,6 @@ class HeaderFooterElements():
         self.make_screenshot("Success message")
 
     def check_and_close_ad_if_present(self):
-        # try:
-        #     self.browser.implicitly_wait(1)  # Set a short implicit wait to quickly check for the presence of ad iframe
-        #     self.make_screenshot('Ad popup :(')
-        #     # Check if the ad iframe is present and switch to it
-        #     ad_iframe = self.browser.find_element(*self.ACTIVE_AD_IFRAME)
-        #     self.browser.switch_to.frame(ad_iframe)
-        #     close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
-        #     close_button.click()
-
-        #     # self.wait.until(EC.url_changes(self.PAGE_URL))
-        #     # Switch back to the default content
-        #     self.browser.switch_to.default_content()
-            
-        #     allure.attach(
-        #         body="Ad popup detected. Screenshot captured.",
-        #         name="Ad Popup",
-        #         attachment_type=allure.attachment_type.TEXT,
-        #     )
-        # except NoSuchElementException:
-        #     pass
-
-        # try:
-        #     ad_iframe = self.browser.find_element(*self.ACTIVE_AD_IFRAME)
-        #     if ad_iframe.is_displayed():
-        #         with allure.step("Close Advertisement"):
-        #             self.browser.switch_to.frame(ad_iframe)
-        #             ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
-        #             ad_close_button.click()
-        #             self.browser.switch_to.default_content()
-        #             allure.attach("Advertisement Closed", name="Advertisement Status", attachment_type=allure.attachment_type.TEXT)
-        # except NoSuchElementException:
-        #     # Advertisement iframe not found, no need to close
-        #     pass
-
         try:
             ad_iframe = self.browser.find_element(*self.ACTIVE_AD_IFRAME)
             if ad_iframe.is_displayed():

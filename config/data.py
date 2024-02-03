@@ -8,7 +8,7 @@ load_dotenv()
 
 class Data:
 
-    _instance = None  # Змінна для зберігання єдиного екземпляру
+    _instance = None 
 
     def __new__(cls, *args, **kwargs):
         if not cls._instance:

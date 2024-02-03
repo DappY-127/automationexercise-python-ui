@@ -15,4 +15,3 @@ class Links:
     CHECKOUT_PAGE = f"{HOST}checkout"
     PAYMENT_PAGE = f"{HOST}payment"
     # ORDER_PLACEMENT_PAGE = f"{HOST}payment_done"
-    # API_TESTING_PAGE = f"{HOST}/"
