@@ -11,7 +11,7 @@ class OrderPlacementPage(BasePage):
     # PAGE_URL = Links.ORDER_PLACEMENT_PAGE
 
     CONTINUE_BTTN = ('css selector', '[data-qa="continue-button"]')
-    DOWNLOAD_INVOICE_BTTN = ('css selector', '[href="/download_invoice/500"]')
+    DOWNLOAD_INVOICE_BTTN = ('css selector', '.btn.check_out')
     ORDER_PLACED_MSSG = ('css selector', '[data-qa="order-placed"]')
 
     @allure.step("Click continue button")
