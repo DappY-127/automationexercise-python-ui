@@ -6,7 +6,20 @@ from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="function", autouse=True)
 def browser(request):
-    download_folder = os.path.join(os.getcwd(), 'pages', 'resources')
+    """
+    Fixture for setting up a WebDriver instance with custom options and download folder.
+
+    If running tests locally, uncomment the 'download_folder' line and customize the path.
+
+    Example:
+        download_folder = os.path.join(os.getcwd(), 'pages', 'resources')
+        ...
+        preferences = {"download.default_directory": download_folder}
+        ...
+
+    """
+    # Uncomment and customize the following line if running tests locally
+    # download_folder = os.path.join(os.getcwd(), 'pages', 'resources')
     
     options = Options()
     options.add_argument('--headless=new')
@@ -17,7 +30,8 @@ def browser(request):
     options.add_argument("--start-maximized")
     options.add_argument('--window-size=1920,1080')
 
-    preferences = {"download.default_directory": download_folder}
+    # preferences = {"download.default_directory": download_folder}
+    preferences = {"download.default_directory": "/usr/workspace/pages/resources"}
     options.add_experimental_option("prefs", preferences)
 
     browser = webdriver.Chrome(options=options)
