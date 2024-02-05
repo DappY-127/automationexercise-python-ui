@@ -1,0 +1,398 @@
+{
+  "uid" : "127d2c03df00d804",
+  "name" : "Verify Subscription in cart page",
+  "fullName" : "tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature#test_verify_subscription_at_cart_page",
+  "historyId" : "e2183dca76d5ec6cda84b0bde58e43e1",
+  "time" : {
+    "start" : 1707133340133,
+    "stop" : 1707133341851,
+    "duration" : 1718
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1707133264542,
+      "stop" : 1707133264616,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1707133338998,
+      "stop" : 1707133339861,
+      "duration" : 863
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1707133339861,
+      "stop" : 1707133340133,
+      "duration" : 272
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1707133340133,
+        "stop" : 1707133340971,
+        "duration" : 838
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1707133340971,
+        "stop" : 1707133340986,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click cart header button",
+      "time" : {
+        "start" : 1707133340986,
+        "stop" : 1707133341451,
+        "duration" : 465
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/view_cart is opened",
+      "time" : {
+        "start" : 1707133341451,
+        "stop" : 1707133341460,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Site header visible",
+      "time" : {
+        "start" : 1707133341461,
+        "stop" : 1707133341516,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Scroll down page to bottom",
+      "time" : {
+        "start" : 1707133341516,
+        "stop" : 1707133341522,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'SUBSCRIPTION' footer block visible",
+      "time" : {
+        "start" : 1707133341522,
+        "stop" : 1707133341573,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Fill email in subscription field",
+      "time" : {
+        "start" : 1707133341573,
+        "stop" : 1707133341660,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'james27@example.com'",
+        "time" : {
+          "start" : 1707133341574,
+          "stop" : 1707133341660,
+          "duration" : 86
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#susbscribe_email')"
+        }, {
+          "name" : "value",
+          "value" : "'james27@example.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click subscribe footer button",
+      "time" : {
+        "start" : 1707133341660,
+        "stop" : 1707133341706,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Succes subscription footer message visible",
+      "time" : {
+        "start" : 1707133341706,
+        "stop" : 1707133341851,
+        "duration" : 145
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bc00c13a4c99ecaa",
+        "name" : "Success message",
+        "source" : "bc00c13a4c99ecaa.png",
+        "type" : "image/png",
+        "size" : 57739
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1707133341852,
+      "stop" : 1707133341965,
+      "duration" : 113
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Subscription Handling"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "Shopping & Checkout"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 11"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "shopping_checkout_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShoppingCheckoutFeature"
+  }, {
+    "name" : "host",
+    "value" : "d19dd10b7f4d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.shopping_checkout_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "2e175de50c38c5b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706868114562,
+          "stop" : 1706868116592,
+          "duration" : 2030
+        }
+      }, {
+        "uid" : "3cfbaebf2c11e051",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706727250997,
+          "stop" : 1706727253017,
+          "duration" : 2020
+        }
+      }, {
+        "uid" : "94bce82c21158378",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706614329043,
+          "stop" : 1706614331580,
+          "duration" : 2537
+        }
+      }, {
+        "uid" : "d4c498e2254e423d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1706260071038,
+          "stop" : 1706260075516,
+          "duration" : 4478
+        }
+      }, {
+        "uid" : "3f68b6e903d6ad2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705931944375,
+          "stop" : 1705931947006,
+          "duration" : 2631
+        }
+      }, {
+        "uid" : "f3110f8549a4931e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705862628221,
+          "stop" : 1705862631018,
+          "duration" : 2797
+        }
+      }, {
+        "uid" : "a741f46fa1eaa876",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705492243536,
+          "stop" : 1705492245376,
+          "duration" : 1840
+        }
+      }, {
+        "uid" : "2e55ada22400a7f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705176867980,
+          "stop" : 1705176870138,
+          "duration" : 2158
+        }
+      }, {
+        "uid" : "4a32824b4b9a78e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1704878926068,
+          "stop" : 1704878934966,
+          "duration" : 8898
+        }
+      } ]
+    },
+    "tags" : [ "TestCaseID: 11" ]
+  },
+  "source" : "127d2c03df00d804.json",
+  "parameterValues" : [ ]
+}
