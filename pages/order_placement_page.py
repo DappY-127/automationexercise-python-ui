@@ -22,7 +22,7 @@ class OrderPlacementPage(BasePage):
     @allure.step("Click 'Download Invoice' button")
     def click_download_invoice_button(self):
         self.wait.until(EC.element_to_be_clickable(self.DOWNLOAD_INVOICE_BTTN)).click()
-        time.sleep(2)
+        time.sleep(3)
         downloaded_file_path = os.path.join(os.getcwd(), 'pages', 'resources', 'invoice.txt')
         self.is_file_present(downloaded_file_path)
 
@@ -34,10 +34,8 @@ class OrderPlacementPage(BasePage):
     @allure.step("Invoice downloaded")
     def is_file_present(self, file_path):
         with allure.step(f"Verify the presence of the file at {file_path}"):
-            if not os.path.exists(file_path) or not os.path.isfile(file_path):
-                allure.attach(f"Test failed. File is missing. Current file path : {file_path}", name="Test Failure Details", attachment_type=allure.attachment_type.TEXT)
-                raise FileNotFoundError(f"File {file_path} not found")
+                if not os.path.exists(file_path) or not os.path.isfile(file_path):
+                    raise FileNotFoundError(f"File {file_path} not found")
 
-        allure.attach.file(f"File downloaded. File path : {file_path}", name="File path", attachment_type=allure.attachment_type.TEXT)
-        return True
+        return True      
     
