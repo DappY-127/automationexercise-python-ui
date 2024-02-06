@@ -1,4 +1,6 @@
 import pytest
+import requests
+import allure
 from config.data import Data
 from pages.account_created_page import AccountCreatedPage
 from pages.account_deleted_page import AccountDeletedPage
@@ -89,6 +91,26 @@ class BaseTest:
         self.account_deleted_page.is_account_deleted_message_visible()
         self.account_deleted_page.click_continue_button()
         self.home_page.is_opened()       
+
+    @allure.step("Test data setup - Register account via API")
+    def register_account_via_api(self):
+        registration_data = self.data.get_registration_data()
+        url = "https://automationexercise.com/api/createAccount"
+        response = requests.post(url, data=registration_data)
+        response_data = response.json()
+        assert response.status_code == 200, f"Failed to register account: {response_data.get('error_message', 'Unknown error')}"
+        allure.attach(f"Account registered successfully. Email: {registration_data['email']}", name="Account Registration", attachment_type=allure.attachment_type.TEXT)
+
+    @allure.step("Test data cleanup - Delete account via API")
+    def delete_account_via_api(self):
+        email = self.data.email
+        password = self.data.password
+        url = "https://automationexercise.com/api/deleteAccount"
+        payload = {'email': email, 'password': password}
+        response = requests.delete(url, data=payload)
+        response_data = response.json()
+        assert response.status_code == 200, f"Failed to delete account: {response_data.get('error_message', 'Unknown error')}"
+        allure.attach(f"Account deleted successfully. Email: {email}", name="Account Deletion", attachment_type=allure.attachment_type.TEXT)
 
 # from pages import (
 #     AccountCreatedPage as CreatedPage,

@@ -45,3 +45,24 @@ class Data:
     def generate_random_email(self):
         random_number = random.randint(0, 9999)
         return f"testmail{random_number}@mail.com"
+
+    def get_registration_data(self):
+        return {
+            'name': self.login_name,
+            'email': self.email,
+            'password': self.password,
+            'title': 'Mr',
+            'birth_date': self.birth_day,
+            'birth_month': self.birth_month,
+            'birth_year': self.birth_year,
+            'firstname': self.first_name,
+            'lastname': self.last_name,
+            'company': self.company,
+            'address1': self.street_address,
+            'address2': self.secondary_address,
+            'country': self.country,
+            'zipcode': self.zipcode,
+            'state': self.state,
+            'city': self.city,
+            'mobile_number': self.phone_number
+        }
